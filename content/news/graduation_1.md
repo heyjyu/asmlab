@@ -5,7 +5,7 @@ image: "images/graduation_group.jpeg"
 author: Hajoon Song
 bg_image: "images/fromiss2.jpg"
 categories: ["Member"]
-tags: ["Graduation"]
+tags: ["Graduation","member"]
 description: ""
 draft: false
 type: "post"
