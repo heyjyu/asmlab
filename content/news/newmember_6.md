@@ -16,15 +16,14 @@ There has been an addition of new members to ASML in 2021.
 <div class='image'>
 <img src="/images/group/yujinkim.jpg" class="img-responsive; width:50%;" alt="">
 </div>
-<br>
-##### **[Yujin Kim](/group/yujinkim/#anchor)** joined ASML through the master program.
-<br>
 
-<!-- <div class='image'>
-<img src="/images/group/swhj.jpg" class="img-responsive; width:50%;" alt="">
-</div> -->
-<br>
-##### **[Chahyung Lee](/group/swhj/#anchor)** joined ASML as an undergraduate-master program student.
+**[Yujin Kim](/group/yujinkim/#anchor)** joined ASML through the master program.
 
+
+<div class='image'>
+<img src="/images/group/chlee.jpeg" class="img-responsive; width:50%;" alt="">
+</div>
+
+**[Chaehyung Lee](/group/chaehyeonglee/#anchor)** joined ASML as an undergraduate-master program student.
 We welcome you!
 <br>

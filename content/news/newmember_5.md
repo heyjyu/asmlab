@@ -14,17 +14,16 @@ type: "post"
 There has been an addition of new members to ASML in 2020.
 
 <div class='image'>
-<img src="/images/group/dhkim.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/images/group/dhkim.png" class="img-responsive; width:50%;" alt="">
 </div>
-<br>
-##### **[Donghyuk Kim](/group/dhkim/#anchor)** joined ASML as an undergraduate research and will continue to be with us as a master student starting September, 2020.
-<br>
+
+**[Donghyuk Kim](/group/dhkim/#anchor)** joined ASML as an undergraduate research and will continue to be with us as a master student starting September, 2020.
 
 <div class='image'>
 <img src="/images/group/swhj.jpg" class="img-responsive; width:50%;" alt="">
 </div>
-<br>
-##### **[Hyojun Seunu](/group/swhj/#anchor)** joined ASML in the fall semester in 2019 as an undergraduate student and has been playing an important role in our lab.
+
+**[Hyojun Seunu](/group/swhj/#anchor)** joined ASML in the fall semester in 2019 as an undergraduate student and has been playing an important role in our lab.
 
 Also, ASML got two new members in the summer, 2020.
 Dr. Yongjin Tak and Ms. Chohyun Rhee.
