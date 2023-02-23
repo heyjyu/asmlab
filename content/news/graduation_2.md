@@ -18,7 +18,7 @@ Big congratulations! We are very proud of you.
 They joined ASML as doctoral students and will be with us for another few more years.
 
 Also, ASML got new member in the winter, 2023.
-**[Hyungjoon](/group/hyungjoonmin/#anchor)**, we welcome you!
+**[Hyungjun](/group/hyungjoonmin/#anchor)**, we welcome you!
 
 <div class='image'>
 <img src="/images/news/graduation_2023_1.jpg" class="img-responsive; width:50%;" alt="">
