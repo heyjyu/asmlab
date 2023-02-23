@@ -1,5 +1,5 @@
 ---
-title: "Hyung Jun Min"
+title: "HyungJun Min"
 nickname: "hjmin"
 date: "2023-02-18T13:39:46+02:00"
 image: "images/hjmin.jpeg"
