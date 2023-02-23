@@ -11,6 +11,6 @@ type: "post"
 
 
 <div class='image'>
-<img src="/images/event1.png" class="img-responsive; width:50%;" alt="">
+<img src="/images/event_hwal.png" class="img-responsive; width:50%;" alt="">
 </div>
 <br>

@@ -5,20 +5,11 @@
     <link>http://airsea.yonsei.ac.kr/tags/</link>
     <description>Recent content in Tags on ASML-Yonsei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Jan 2023 00:43:34 +0900</lastBuildDate><atom:link href="http://airsea.yonsei.ac.kr/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>event</title>
-      <link>http://airsea.yonsei.ac.kr/tags/event/</link>
-      <pubDate>Fri, 27 Jan 2023 00:43:34 +0900</pubDate>
-      
-      <guid>http://airsea.yonsei.ac.kr/tags/event/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 23 Feb 2023 00:43:34 +0900</lastBuildDate><atom:link href="http://airsea.yonsei.ac.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graduation</title>
       <link>http://airsea.yonsei.ac.kr/tags/Graduation/</link>
-      <pubDate>Thu, 25 Aug 2022 00:43:34 +0900</pubDate>
+      <pubDate>Thu, 23 Feb 2023 00:43:34 +0900</pubDate>
       
       <guid>http://airsea.yonsei.ac.kr/tags/Graduation/</guid>
       <description></description>
@@ -27,9 +18,18 @@
     <item>
       <title>member</title>
       <link>http://airsea.yonsei.ac.kr/tags/member/</link>
-      <pubDate>Thu, 25 Aug 2022 00:43:34 +0900</pubDate>
+      <pubDate>Thu, 23 Feb 2023 00:43:34 +0900</pubDate>
       
       <guid>http://airsea.yonsei.ac.kr/tags/member/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event</title>
+      <link>http://airsea.yonsei.ac.kr/tags/event/</link>
+      <pubDate>Fri, 27 Jan 2023 00:43:34 +0900</pubDate>
+      
+      <guid>http://airsea.yonsei.ac.kr/tags/event/</guid>
       <description></description>
     </item>
     

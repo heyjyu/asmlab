@@ -11,7 +11,7 @@ draft: false
 type: "post"
 ---
 
-**[Donghyuk](/group/ajincho/#anchor)** received his  Master's degree and graduated this summer!
+**[Donghyuk](/group/dhkim/#anchor)** received his  Master's degree and graduated this summer!
 
 Big congratulations! We are very proud of you.
 
