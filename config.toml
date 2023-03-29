@@ -1,4 +1,4 @@
-baseURL = "https://heyjyu.github.io/asmlab.github.io/"
+baseURL = "https://heyjyu.github.io/asmlab/"
 title = "ASML-Yonsei"
 theme = "hugo-geekdoc"
 
@@ -55,7 +55,7 @@ enableRobotsTXT = true
 
   # (Optional, default none) Set source repository location. Used for 'Edit page' links.
   # You can also specify this parameter per page in front matter.
-  geekdocRepo = "https://github.com/heyjyu/asmlab.github.io"
+  geekdocRepo = "https://github.com/heyjyu/asmlab"
 
   # (Optional, default none) Enable 'Edit page' links. Requires 'GeekdocRepo' param
   # and path must point to 'content' directory of repo.
