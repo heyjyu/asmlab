@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: http://airsea.yonsei.ac.kr/sitemap.xml
+Sitemap: https://heyjyu.github.io/asmlab.github.io/sitemap.xml
