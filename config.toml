@@ -1,4 +1,4 @@
-baseURL = "http://heyjyu.github.io/asmlab.github.io/"
+baseURL = "https://heyjyu.github.io/asmlab.github.io/"
 title = "ASML-Yonsei"
 theme = "hugo-geekdoc"
 
