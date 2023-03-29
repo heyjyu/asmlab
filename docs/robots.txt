@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: https://heyjyu.github.io/asmlab.github.io/sitemap.xml
+Sitemap: https://heyjyu.github.io/asmlab/sitemap.xml

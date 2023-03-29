@@ -43,7 +43,7 @@ geekdocHidden: true
     <li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/tak2022.jpeg" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/tak2022.jpeg" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">
@@ -60,7 +60,7 @@ geekdocHidden: true
     <li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/cho2022.png" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/cho2022.png" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">
@@ -77,7 +77,7 @@ geekdocHidden: true
     <li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/kwak.png" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/kwak.png" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">
@@ -94,7 +94,7 @@ geekdocHidden: true
     <li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/alshehhi.png" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/alshehhi.png" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">
@@ -111,7 +111,7 @@ geekdocHidden: true
     <li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/tak.jpeg" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/tak.jpeg" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">
@@ -128,7 +128,7 @@ geekdocHidden: true
     <!--li>
       <div class="card shadow h-100">
         <div class="ratio ratio-16x9">
-          <img src="/images/song.jpeg" class="card-img-top" loading="lazy" alt="...">
+          <img src="/asmlab/images/song.jpeg" class="card-img-top" loading="lazy" alt="...">
         </div>
         <div class="card-body d-flex flex-column flex-md-row">
           <div class="flex-grow-1">

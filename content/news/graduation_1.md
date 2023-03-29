@@ -21,6 +21,6 @@ Also, ASML got new member in the summer, 2022.
 **[JoonWoo](/group/joonwoolee/#anchor)**, we welcome you!
 
 <div class='image'>
-<img src="/images/group_2022_summer.jpeg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/group_2022_summer.jpeg" class="img-responsive; width:50%;" alt="">
 </div>
 <br>

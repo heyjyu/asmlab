@@ -27,5 +27,5 @@ The near-inertial waves (NIWs) are critical in the ocean mixing near the surface
 ### Dumping of heat by tropical cyclones
 We investigate how much of heat is provided by tropical cyclones and where this heat goes under the surface using a coupled atmosphere-ocean model.
 <div class="col-sm-4 portfolio-item shuffle-item">
-  <img src="/images/ani.gif" alt="">
+  <img src="/asmlab/images/ani.gif" alt="">
 </div>

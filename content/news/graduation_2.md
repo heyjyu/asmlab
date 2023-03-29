@@ -21,7 +21,7 @@ Also, ASML got new member in the winter, 2023.
 **[Hyungjun](/group/hyungjoonmin/#anchor)**, we welcome you!
 
 <div class='image'>
-<img src="/images/news/graduation_2023_1.jpg" class="img-responsive; width:50%;" alt="">
-<img src="/images/news/graduation_2023_2.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/news/graduation_2023_1.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/news/graduation_2023_2.jpg" class="img-responsive; width:50%;" alt="">
 </div>
 <br>

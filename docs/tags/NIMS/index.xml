@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NIMS on ASML-Yonsei</title>
-    <link>https://heyjyu.github.io/asmlab.github.io/tags/NIMS/</link>
+    <link>https://heyjyu.github.io/asmlab/tags/NIMS/</link>
     <description>Recent content in NIMS on ASML-Yonsei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Oct 2018 23:03:07 +0900</lastBuildDate><atom:link href="https://heyjyu.github.io/asmlab.github.io/tags/NIMS/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Oct 2018 23:03:07 +0900</lastBuildDate><atom:link href="https://heyjyu.github.io/asmlab/tags/NIMS/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Seminar at NIMS</title>
-      <link>https://heyjyu.github.io/asmlab.github.io/news/seminar_nims/</link>
+      <link>https://heyjyu.github.io/asmlab/news/seminar_nims/</link>
       <pubDate>Wed, 17 Oct 2018 23:03:07 +0900</pubDate>
       
-      <guid>https://heyjyu.github.io/asmlab.github.io/news/seminar_nims/</guid>
+      <guid>https://heyjyu.github.io/asmlab/news/seminar_nims/</guid>
       <description>A Visit to National Institute of Meteorological Sciences     Hajoon visited National Institute of Meteorological Sciences in Seoguipo, Jeju Island, and gave a talk with the title of global and regional physical ocean data assimilation and a strongly coupled data assimilation.</description>
     </item>
     

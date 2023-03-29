@@ -25,11 +25,11 @@ type: "post"
 강연 슬라이드는 [여기](/images/HajoonSong_2019KMSClimate.pdf)에서 다운받으실 수 있습니다.
 
 <div class='image'>
-<img src="/images/kmspring1.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/kmspring1.jpg" class="img-responsive; width:50%;" alt="">
 </div>
 <br>
 
 <div class='image'>
-<img src="/images/kmspring2.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/kmspring2.jpg" class="img-responsive; width:50%;" alt="">
 </div>
 <br>

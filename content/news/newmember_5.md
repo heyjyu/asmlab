@@ -14,13 +14,13 @@ type: "post"
 There has been an addition of new members to ASML in 2020.
 
 <div class='image'>
-<img src="/images/group/dhkim.png" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/group/dhkim.png" class="img-responsive; width:50%;" alt="">
 </div>
 
 **[Donghyuk Kim](/group/dhkim/#anchor)** joined ASML as an undergraduate research and will continue to be with us as a master student starting September, 2020.
 
 <div class='image'>
-<img src="/images/group/swhj.jpg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/group/swhj.jpg" class="img-responsive; width:50%;" alt="">
 </div>
 
 **[Hyojun Seunu](/group/swhj/#anchor)** joined ASML in the fall semester in 2019 as an undergraduate student and has been playing an important role in our lab.

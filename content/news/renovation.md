@@ -15,9 +15,9 @@ We also replaced old desks that have been sitting here long before I joined. We 
 Now the room, a place to dive into the science, is ready.
 
 <div class="post-thumb">
-    <img class="img-responsive" src="/images/news/floor.jpg" alt="{{ .Title }}">
+    <img class="img-responsive" src="/asmlab/images/news/floor.jpg" alt="{{ .Title }}">
 </div>
 <br>
 <div class="post-thumb">
-    <img class="img-responsive" src="/images/news/IMG_4123.jpeg" alt="{{ .Title }}">
+    <img class="img-responsive" src="/asmlab/images/news/IMG_4123.jpeg" alt="{{ .Title }}">
 </div>

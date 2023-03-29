@@ -19,9 +19,9 @@ It was good to be back and meet amazing people there.
 This visit was possible through the support from Korea Research Foundation (신진연구).
 
 <div class="post-thumb">
-    <img class="img-responsive" src="/images/news/sio_1.png" alt="{{ .Title }}">
+    <img class="img-responsive" src="/asmlab/images/news/sio_1.png" alt="{{ .Title }}">
 </div>
 <br>
 <div class="post-thumb">
-    <img class="img-responsive" src="/images/news/sio_2.png" alt="{{ .Title }}">
+    <img class="img-responsive" src="/asmlab/images/news/sio_2.png" alt="{{ .Title }}">
 </div>

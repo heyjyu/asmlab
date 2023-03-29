@@ -18,6 +18,6 @@ Big congratulations! We are very proud of you.
 They joined ASML as doctoral students and will be with us for another few more years.
 
 <div class='image'>
-<img src="/images/graduation_two.jpeg" class="img-responsive; width:50%;" alt="">
+<img src="/asmlab/images/graduation_two.jpeg" class="img-responsive; width:50%;" alt="">
 </div>
 <br>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>webpage on ASML-Yonsei</title>
-    <link>https://heyjyu.github.io/asmlab.github.io/tags/webpage/</link>
+    <link>https://heyjyu.github.io/asmlab/tags/webpage/</link>
     <description>Recent content in webpage on ASML-Yonsei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Aug 2018 00:08:37 -0400</lastBuildDate><atom:link href="https://heyjyu.github.io/asmlab.github.io/tags/webpage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Aug 2018 00:08:37 -0400</lastBuildDate><atom:link href="https://heyjyu.github.io/asmlab/tags/webpage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New webpage</title>
-      <link>https://heyjyu.github.io/asmlab.github.io/news/newwebpage/</link>
+      <link>https://heyjyu.github.io/asmlab/news/newwebpage/</link>
       <pubDate>Wed, 01 Aug 2018 00:08:37 -0400</pubDate>
       
-      <guid>https://heyjyu.github.io/asmlab.github.io/news/newwebpage/</guid>
+      <guid>https://heyjyu.github.io/asmlab/news/newwebpage/</guid>
       <description>Launching a new webpage     We are please to launch the first webpage of the Air-Sea Modeling Lab. Please come and check our research and accomplishments.</description>
     </item>
     
