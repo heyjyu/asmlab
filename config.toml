@@ -1,4 +1,4 @@
-baseURL = "http://airsea.yonsei.ac.kr/"
+baseURL = "https://airsea.yonsei.ac.kr/"
 title = "ASML-Yonsei"
 theme = "hugo-geekdoc"
 

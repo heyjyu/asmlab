@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: http://airsea.yonsei.ac.kr/sitemap.xml
+Sitemap: https://airsea.yonsei.ac.kr/sitemap.xml

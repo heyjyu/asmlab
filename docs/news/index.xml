@@ -2,9 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on ASML-Yonsei</title>
-    <link>http://airsea.yonsei.ac.kr/news/</link>
+    <link>https://airsea.yonsei.ac.kr/news/</link>
     <description>Recent content in News on ASML-Yonsei</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="http://airsea.yonsei.ac.kr/news/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://airsea.yonsei.ac.kr/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graduation, 2023 summer</title>
       <link>http://airsea.yonsei.ac.kr/news/graduation_3/</link>
@@ -56,10 +57,10 @@ Big congratulations! We are very proud of you.</description>
     
     <item>
       <title>Graduation and New Member,2023</title>
-      <link>http://airsea.yonsei.ac.kr/news/graduation_2/</link>
+      <link>https://airsea.yonsei.ac.kr/news/graduation_2/</link>
       <pubDate>Thu, 23 Feb 2023 00:43:34 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/graduation_2/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/graduation_2/</guid>
       <description>Yujin and Hyojun received their Master&amp;rsquo;s degree and graduated this winter!
 Big congratulations! We are very proud of you.
 They joined ASML as doctoral students and will be with us for another few more years.
@@ -68,29 +69,29 @@ Also, ASML got new member in the winter, 2023. Hyungjun, we welcome you!</descri
     
     <item>
       <title>유창현 교수님 연구팀과의 워크샵</title>
-      <link>http://airsea.yonsei.ac.kr/news/ewha_2023/</link>
+      <link>https://airsea.yonsei.ac.kr/news/ewha_2023/</link>
       <pubDate>Thu, 23 Feb 2023 00:43:34 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/ewha_2023/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/ewha_2023/</guid>
       <description>2023년 2월 23일, 이화여자대학교 연구협력관에서 유창현 교수님 연구팀과 워크샵을 가졌습니다. 학술적 교류 및 연구팀 간 인적 네트워크 구축을 할 수 있었던 좋은 시간이었습니다. 워크샵은 연구팀별 발표 및 점심 식사로 진행되었습니다.
 저희 연구팀에서는 이채형 연구원이 &amp;lsquo;The Increasing Trend of Persistence of Sea Surface Temperature due to changes in oceanic processes&amp;rsquo;, 김동혁 연구원이 &amp;lsquo;Springtime Southern Hemisphere Quasi-Stationary Planetary Wave Activities Associated with ENSO/IOD&amp;rsquo;, 조아진 연구원이 &amp;lsquo;Oceanic Responses to Surface Current Coupling near the Kuroshio Current&amp;rsquo; 라는 주제로 발표하였습니다.</description>
     </item>
     
     <item>
       <title>연구실 양궁대회</title>
-      <link>http://airsea.yonsei.ac.kr/news/event/</link>
+      <link>https://airsea.yonsei.ac.kr/news/event/</link>
       <pubDate>Fri, 27 Jan 2023 00:43:34 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/event/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/event/</guid>
       <description>2023.01.27, 정기 그룹미팅 후에 신촌에 위치한 양궁 카페에서 연구원들이 함께 활 쏘는 시간을 가졌습니다.</description>
     </item>
     
     <item>
       <title>Graduation and New Member,2022</title>
-      <link>http://airsea.yonsei.ac.kr/news/graduation_1/</link>
+      <link>https://airsea.yonsei.ac.kr/news/graduation_1/</link>
       <pubDate>Thu, 25 Aug 2022 00:43:34 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/graduation_1/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/graduation_1/</guid>
       <description>Donghyuk received his Master&amp;rsquo;s degree and graduated this summer!
 Big congratulations! We are very proud of you.
 He joined ASML as doctoral students and will be with us for another few more years.
@@ -99,10 +100,10 @@ Also, ASML got new member in the summer, 2022. JoonWoo, we welcome you!</descrip
     
     <item>
       <title>Graduation</title>
-      <link>http://airsea.yonsei.ac.kr/news/graduation/</link>
+      <link>https://airsea.yonsei.ac.kr/news/graduation/</link>
       <pubDate>Tue, 31 Aug 2021 00:43:34 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/graduation/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/graduation/</guid>
       <description>Ajin and Kyungmin received their Master&amp;rsquo;s degree and graduated this summer!
 Big congratulations! We are very proud of you.
 They joined ASML as doctoral students and will be with us for another few more years.</description>
@@ -110,10 +111,10 @@ They joined ASML as doctoral students and will be with us for another few more y
     
     <item>
       <title>New members, 2021</title>
-      <link>http://airsea.yonsei.ac.kr/news/newmember_6/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newmember_6/</link>
       <pubDate>Tue, 30 Mar 2021 16:53:20 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newmember_6/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newmember_6/</guid>
       <description>There has been an addition of new members to ASML in 2021.
 Yujin Kim joined ASML through the master program.
 Chaehyeong Lee joined ASML as an undergraduate-master program student. We welcome you! </description>
@@ -121,10 +122,10 @@ Chaehyeong Lee joined ASML as an undergraduate-master program student. We welcom
     
     <item>
       <title>New members, 2020</title>
-      <link>http://airsea.yonsei.ac.kr/news/newmember_5/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newmember_5/</link>
       <pubDate>Sun, 30 Aug 2020 16:53:20 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newmember_5/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newmember_5/</guid>
       <description>There has been an addition of new members to ASML in 2020.
 Donghyuk Kim joined ASML as an undergraduate research and will continue to be with us as a master student starting September, 2020.
 Hyojun Seunu joined ASML in the fall semester in 2019 as an undergraduate student and has been playing an important role in our lab.
@@ -133,20 +134,20 @@ Also, ASML got two new members in the summer, 2020. Dr. Yongjin Tak and Ms.</des
     
     <item>
       <title>Renovation</title>
-      <link>http://airsea.yonsei.ac.kr/news/renovation/</link>
+      <link>https://airsea.yonsei.ac.kr/news/renovation/</link>
       <pubDate>Sun, 30 Aug 2020 16:01:04 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/renovation/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/renovation/</guid>
       <description>The laboratory room was significantly renovated! The floor has been an issue in the last couple of years; an uneven surface with holes and duct tapes was not safe and made it difficult to put the desks and chairs. So first we leveled the floor (basically ground the stone) and put tiles on it. The job was well done and the room looked new!
 We also replaced old desks that have been sitting here long before I joined.</description>
     </item>
     
     <item>
       <title>Webpage_update</title>
-      <link>http://airsea.yonsei.ac.kr/news/webpage_update/</link>
+      <link>https://airsea.yonsei.ac.kr/news/webpage_update/</link>
       <pubDate>Wed, 13 May 2020 17:50:11 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/webpage_update/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/webpage_update/</guid>
       <description>We made a major update of the lab webpage so that the pagination works well for the &amp;ldquo;News&amp;rdquo; section.
 It is built based on the theme called Airspace. Photos are mainly from NASA Goddard Flickr page, a vorticity field that Ryan Abernathey created using the MITgcm llc4320 simulation and other online places.
 Please let us know if there are things that do not work properly.</description>
@@ -154,10 +155,10 @@ Please let us know if there are things that do not work properly.</description>
     
     <item>
       <title>박사후 연구원 모집</title>
-      <link>http://airsea.yonsei.ac.kr/news/hiring_postdoc/</link>
+      <link>https://airsea.yonsei.ac.kr/news/hiring_postdoc/</link>
       <pubDate>Mon, 11 May 2020 09:02:29 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/hiring_postdoc/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/hiring_postdoc/</guid>
       <description>대기-해양 모델링 연구실에서 박사후 연구원을 모집합니다. 저희 연구실에서는 해양모델링 및 해양자료동화 관련 프로젝트를 계획중이며, 함께 연구할 수 있는 박사후 연구원을 모집하고 있습니다.
 ■ 지원조건
 해양학, 대기과학 관련분야 박사과정 졸업자 (박사학위 취득 후 5년이내여야 함) 수치모델링 혹은 자료동화 관련 연구경험 ■ 급여
@@ -168,86 +169,86 @@ CV 연구계획서 1인의 추천서 ■ 접수 및 문의처</description>
     
     <item>
       <title>Visit to Scripps Institution of Oceanography</title>
-      <link>http://airsea.yonsei.ac.kr/news/sio/</link>
+      <link>https://airsea.yonsei.ac.kr/news/sio/</link>
       <pubDate>Sat, 01 Feb 2020 18:01:33 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/sio/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/sio/</guid>
       <description>Hajoon visited Bruce Cornuelle and Art Miller at Scripps Institution of Oceanography in February, 2020. The main purpose of the visit is to set up the WRF-MITgcm coupled model over the northwest Pacific. It was good to be back and meet amazing people there.
 This visit was possible through the support from Korea Research Foundation (신진연구).</description>
     </item>
     
     <item>
       <title>Hiring</title>
-      <link>http://airsea.yonsei.ac.kr/news/hiring/</link>
+      <link>https://airsea.yonsei.ac.kr/news/hiring/</link>
       <pubDate>Wed, 27 Nov 2019 09:02:29 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/hiring/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/hiring/</guid>
       <description>대기-해양 모델링 연구실에서 대학원생 연구원 및 학부 연구원을 모집합니다. 저희 연구실에서는 대기-해양 상호작용이 대기와 해양의 순환과 탄소교환에 미치는 영향에 대한 프로젝트를 수행하고 있습니다. 이 프로젝트에서 저희는 위성 및 무인관측값과 고해상도 수치모델을 이용하는 연구를 계획중이며, 함께 연구할 수 있는 연구원을 모집하고 있습니다.
 대학원생 연구원 대기-해양 접합모델을 이용하여 대기-해양 상호작용과 이와 밀접한 관련이 있는 현상, 그리고 탄소순 연구에 관심이 있어서 대학원 진학을 희망하는 분들을 찾습니다. 2020년 2학기부터 시작하실 수 있고, 그 전까지 이메일로 지원를 받습니다.</description>
     </item>
     
     <item>
       <title>MIT visit</title>
-      <link>http://airsea.yonsei.ac.kr/news/MITvisit_2019/</link>
+      <link>https://airsea.yonsei.ac.kr/news/MITvisit_2019/</link>
       <pubDate>Thu, 29 Aug 2019 08:57:48 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/MITvisit_2019/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/MITvisit_2019/</guid>
       <description>Hajoon Song visited MIT again from July 15th to August 20th, 2019, as a visiting professor. He continued to collaborate with Professor John Marshall and Dr. MaryamRashed Alshehhi to understand the ocean circulation in the area of Arabian Gulf.
 (photo from MIT news)</description>
     </item>
     
     <item>
       <title>27th IUGG General Assembly</title>
-      <link>http://airsea.yonsei.ac.kr/news/IUGG/</link>
+      <link>https://airsea.yonsei.ac.kr/news/IUGG/</link>
       <pubDate>Tue, 23 Jul 2019 22:10:57 -0400</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/IUGG/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/IUGG/</guid>
       <description>27th IUGG General Assembly Hajoon chaired the session &amp;ldquo;The Southern Ocean where the ocean and atmosphere meet &amp;quot; in the 27th IUGG General Assembly (7/8 - 7/18, 2019) in Montreal, Canada. In this session, he also gave a poster presentation about the recently published work on the near-inertial waves and carbon dioxide exchange between the air and sea.
 The poster can be downloaded from this link</description>
     </item>
     
     <item>
       <title>New members</title>
-      <link>http://airsea.yonsei.ac.kr/news/newmember_4/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newmember_4/</link>
       <pubDate>Thu, 04 Jul 2019 07:49:59 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newmember_4/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newmember_4/</guid>
       <description> A New Member ##### **[Ajin Cho](/group/ajincho/#anchor)** returned to ASML starting June, 2019! Welcome back! ##### **[Kyungmin Kwak](/group/kyungminkwak/#anchor)** joined ASML starting July, 2019! We welcome you! </description>
     </item>
     
     <item>
       <title>Farewell</title>
-      <link>http://airsea.yonsei.ac.kr/news/farewell_suji/</link>
+      <link>https://airsea.yonsei.ac.kr/news/farewell_suji/</link>
       <pubDate>Sun, 30 Jun 2019 18:14:31 -0400</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/farewell_suji/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/farewell_suji/</guid>
       <description> A farewell party **Suji Gwak** finished her internship with us at the end of June. We thank you for your contribution to our lab and wish you the very best! </description>
     </item>
     
     <item>
       <title>Seminar at Hanyang University</title>
-      <link>http://airsea.yonsei.ac.kr/news/hanyang/</link>
+      <link>https://airsea.yonsei.ac.kr/news/hanyang/</link>
       <pubDate>Wed, 29 May 2019 18:21:46 -0400</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/hanyang/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/hanyang/</guid>
       <description>한양대학교 해양융합과학기술 인재양성팀 초청세미나 Hajoon gave a talk with the title &amp;ldquo;The Southern Ocean where the ocean and atmosphere meet &amp;quot; at Hanyang University</description>
     </item>
     
     <item>
       <title>SEES Colloquium</title>
-      <link>http://airsea.yonsei.ac.kr/news/SEES/</link>
+      <link>https://airsea.yonsei.ac.kr/news/SEES/</link>
       <pubDate>Wed, 22 May 2019 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/SEES/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/SEES/</guid>
       <description>SEES Colloquium at Seoul National University Hajoon gave a talk in the SEES Colloquium with the title of &amp;ldquo;The ocean circulation and its impact on the air-sea CO2 exchange&amp;rdquo;. He introduced the offline experiments with carbon cycle and emphasized that near-inertial waves can give a significant influence on the CO2 flux through vertical mixing.</description>
     </item>
     
     <item>
       <title>2019 기상학회 기후분과 봄 학술대회</title>
-      <link>http://airsea.yonsei.ac.kr/news/kms_climate/</link>
+      <link>https://airsea.yonsei.ac.kr/news/kms_climate/</link>
       <pubDate>Fri, 12 Apr 2019 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/kms_climate/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/kms_climate/</guid>
       <description>2019년 한국기상학회 기후분과 봄학술대회 송하준 책임연구원은 2019년 한국기상학회 기후분과 봄학술대회의 학생워크샵에 강사로 초청되어
 &amp;ldquo;해양물리의 관점에서 보는 탄소순환&amp;rdquo;
 이라는 주제로 강연을 하였습니다. 많은 분들이 참석하셔서 모두 같이 해양물리와 탄소순환이 어떻게 연결되어 있는지 알아보는 의미있는 자리였습니다.
@@ -256,20 +257,20 @@ The poster can be downloaded from this link</description>
     
     <item>
       <title>Talk at 2019 EGU General assembly</title>
-      <link>http://airsea.yonsei.ac.kr/news/EGU/</link>
+      <link>https://airsea.yonsei.ac.kr/news/EGU/</link>
       <pubDate>Fri, 12 Apr 2019 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/EGU/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/EGU/</guid>
       <description>2019 EGU General Assembly Hajoon attended 2019 EGU General Assembly and gave a talk titled with &amp;ldquo;Seasonal Variation in the Correlation Between Anomalies of Sea Level and Chlorophyll in the Antarctic Circumpolar Current&amp;rdquo; in the session &amp;ldquo;The Southern Ocean in a changing climate: from ice shelves to open ocean&amp;rdquo;
 This talk presented his paper appeared on GRL, so the detailed information about this talk can be found here.</description>
     </item>
     
     <item>
       <title>MIT visit</title>
-      <link>http://airsea.yonsei.ac.kr/news/MITvisit_feb/</link>
+      <link>https://airsea.yonsei.ac.kr/news/MITvisit_feb/</link>
       <pubDate>Thu, 07 Mar 2019 08:59:30 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/MITvisit_feb/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/MITvisit_feb/</guid>
       <description>Hajoon Song visited MIT from February 6th to February 20th, 2019, as a visiting professor. As in last summer, he collaborated with Professor John Marshall and Dr. MaryamRashed Alshehhi to understand the ocean circulation in the area of Arabian Gulf.
 Using the state-of-art ocean circulation model, we tried to explain the salinity maximum in the subsurface of Arabian Sea observed in situ measurements and autonomous floats, Argo.
 He was told that this winter has been mild until a very cold air mass covered the area one week before he visited.</description>
@@ -277,28 +278,28 @@ He was told that this winter has been mild until a very cold air mass covered th
     
     <item>
       <title>A New member</title>
-      <link>http://airsea.yonsei.ac.kr/news/newmember_3/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newmember_3/</link>
       <pubDate>Fri, 01 Feb 2019 18:10:47 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newmember_3/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newmember_3/</guid>
       <description> A New Member ##### **Suji Gwak** joined ASML starting February, 2019! We welcome you! </description>
     </item>
     
     <item>
       <title>Farewell</title>
-      <link>http://airsea.yonsei.ac.kr/news/farewell_1/</link>
+      <link>https://airsea.yonsei.ac.kr/news/farewell_1/</link>
       <pubDate>Mon, 31 Dec 2018 18:16:05 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/farewell_1/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/farewell_1/</guid>
       <description> A farewell party Sadly, we had to let **[Ajin Cho](/group/ajincho/#anchor)** and **[Sanghyun Kim](/group/sanghyunkim/#anchor)** go. Ajin started working in the industry after the graduation and Sanghyun went to UC Davis as an exchange student. We wish you the best! </description>
     </item>
     
     <item>
       <title>Seminar at Ewha Womans University</title>
-      <link>http://airsea.yonsei.ac.kr/news/ewha/</link>
+      <link>https://airsea.yonsei.ac.kr/news/ewha/</link>
       <pubDate>Wed, 21 Nov 2018 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/ewha/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/ewha/</guid>
       <description>The Colloquium at the Dept. of Climate and Energy Systems Engineering
 Hajoon gave a talk about the changing climate in the Southern Hemisphere with the title, &amp;ldquo;The Southern Oean where ocean and atmosphere meet&amp;rdquo; in the [Department Colloquium] (http://home.ewha.ac.kr/cyoo/seminar.html). In the talk, he covered the responses of the atmospheric and oceanic circulations to the ozone hole.
 Link (Korean) </description>
@@ -306,10 +307,10 @@ Link (Korean) </description>
     
     <item>
       <title>Seminar at Ewha Womans University</title>
-      <link>http://airsea.yonsei.ac.kr/news/ewha_2018/</link>
+      <link>https://airsea.yonsei.ac.kr/news/ewha_2018/</link>
       <pubDate>Wed, 21 Nov 2018 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/ewha_2018/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/ewha_2018/</guid>
       <description>The Colloquium at the Dept. of Climate and Energy Systems Engineering
 Hajoon gave a talk about the changing climate in the Southern Hemisphere with the title, &amp;ldquo;The Southern Oean where ocean and atmosphere meet&amp;rdquo; in the [Department Colloquium] (http://home.ewha.ac.kr/cyoo/seminar.html). In the talk, he covered the responses of the atmospheric and oceanic circulations to the ozone hole.
 Link (Korean) </description>
@@ -317,111 +318,111 @@ Link (Korean) </description>
     
     <item>
       <title>KIAPS International symposium</title>
-      <link>http://airsea.yonsei.ac.kr/news/kiaps/</link>
+      <link>https://airsea.yonsei.ac.kr/news/kiaps/</link>
       <pubDate>Tue, 13 Nov 2018 23:57:16 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/kiaps/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/kiaps/</guid>
       <description>2018 KIAPS International Symposium on the Global NWP System Modeling Hajoon attended 2018 KIAPS International Symposium and gave a talk on the strongly coupled physical and biogeochemical data assimilation. There were more than 30 experts on NWP and data assimilation from all over the world and shared the recent progress on their research.</description>
     </item>
     
     <item>
       <title>Workshop at KHOA</title>
-      <link>http://airsea.yonsei.ac.kr/news/khoa/</link>
+      <link>https://airsea.yonsei.ac.kr/news/khoa/</link>
       <pubDate>Sat, 10 Nov 2018 23:58:04 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/khoa/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/khoa/</guid>
       <description>Korea Hydrographic and Oceanographic Agency Hajoon attended the workshop on the future plan to utilize the observation from Ocean Research Stations around the Korean Peninsula. He presented how valuable biogeochemical measurements from these sites for the estimation of the biogeochemical ocean states using data assimilation.</description>
     </item>
     
     <item>
       <title>PICES annual meeting</title>
-      <link>http://airsea.yonsei.ac.kr/news/pices/</link>
+      <link>https://airsea.yonsei.ac.kr/news/pices/</link>
       <pubDate>Fri, 02 Nov 2018 23:56:46 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/pices/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/pices/</guid>
       <description>PICES-2018 Annual Meeting Hajoon attended PICES-2018 Annual Meeting in Yokohama, Japan from October 31 to November 2, 2018. He gave a talk titled by &amp;ldquo;]Data assimilation of physical and chlorophyll-a observations in the California Current System using two biogeochemical models](https://meetings.pices.int/publications/book-of-abstracts/2018-PICES-Book-of-Abstracts.pdf)&#34;.
 The detailed information about this meeting can be found here.</description>
     </item>
     
     <item>
       <title>Seminar at KOPRI</title>
-      <link>http://airsea.yonsei.ac.kr/news/seminar_kopri/</link>
+      <link>https://airsea.yonsei.ac.kr/news/seminar_kopri/</link>
       <pubDate>Fri, 19 Oct 2018 23:03:07 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/seminar_kopri/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/seminar_kopri/</guid>
       <description>A Visit to Korea Polar Research Institute Hajoon was invited to the EGG seminar at Korea Polar Research Institute in Incheon. The talk was titled &amp;ldquo;Seasonal Variation in the Correlation Between Anomalies of Sea Level and Chlorophyll in the Antarctic Circumpolar Current&amp;rdquo; and discussed the impact of mesoscale mixed layer depth modulation on chlorophyll along the Antarctic Circumpolar Current in the Southern Ocean.</description>
     </item>
     
     <item>
       <title>Seminar at NIMS</title>
-      <link>http://airsea.yonsei.ac.kr/news/seminar_nims/</link>
+      <link>https://airsea.yonsei.ac.kr/news/seminar_nims/</link>
       <pubDate>Wed, 17 Oct 2018 23:03:07 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/seminar_nims/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/seminar_nims/</guid>
       <description>A Visit to National Institute of Meteorological Sciences Hajoon visited National Institute of Meteorological Sciences in Seoguipo, Jeju Island, and gave a talk with the title of global and regional physical ocean data assimilation and a strongly coupled data assimilation.</description>
     </item>
     
     <item>
       <title>Seminar at Korea Meteorological Administration</title>
-      <link>http://airsea.yonsei.ac.kr/news/seminar_kma/</link>
+      <link>https://airsea.yonsei.ac.kr/news/seminar_kma/</link>
       <pubDate>Fri, 12 Oct 2018 22:57:55 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/seminar_kma/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/seminar_kma/</guid>
       <description>A Visit to Korea Meteorological Administration Hajoon visited Korea Meteorological Administration and gave a talk about the analysis and application of the ocean model.</description>
     </item>
     
     <item>
       <title>A New member</title>
-      <link>http://airsea.yonsei.ac.kr/news/newmember_2/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newmember_2/</link>
       <pubDate>Mon, 01 Oct 2018 18:10:47 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newmember_2/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newmember_2/</guid>
       <description> A New Member ##### **[Chunil Namgung](/group/chunilnamgung/#anchor)** joined ASML starting October, 2018! We welcome you! </description>
     </item>
     
     <item>
       <title>MIT visit</title>
-      <link>http://airsea.yonsei.ac.kr/news/MITvisit/</link>
+      <link>https://airsea.yonsei.ac.kr/news/MITvisit/</link>
       <pubDate>Tue, 04 Sep 2018 17:44:46 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/MITvisit/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/MITvisit/</guid>
       <description>Hajoon Song visited MIT from July 1st to August 24th, 2018, as a visiting professor. During the stay, he contributes to the project of the simulation of the Gulf of Arabia using a very high-resolution numerical ocean model with Professor John Marshall and Dr. MaryamRashed Alshehhi. His role involved the launch of the ocean model, analyze and diagnose the model results, and visualize the simulation. Another project he was involved with was the diagnosing the simulation of Arctic with the interest of the heat transport from the Atlantic Ocean to the Arctic.</description>
     </item>
     
     <item>
       <title>New webpage</title>
-      <link>http://airsea.yonsei.ac.kr/news/newwebpage/</link>
+      <link>https://airsea.yonsei.ac.kr/news/newwebpage/</link>
       <pubDate>Wed, 01 Aug 2018 00:08:37 -0400</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/newwebpage/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/newwebpage/</guid>
       <description>Launching a new webpage We are please to launch the first webpage of the Air-Sea Modeling Lab. Please come and check our research and accomplishments.</description>
     </item>
     
     <item>
       <title>New members</title>
-      <link>http://airsea.yonsei.ac.kr/news/new_members/</link>
+      <link>https://airsea.yonsei.ac.kr/news/new_members/</link>
       <pubDate>Fri, 01 Jun 2018 07:49:59 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/new_members/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/new_members/</guid>
       <description> New members Undergraduate members join ASML
 Ajin Cho, Sanghyun Kim, Jiwoo Choi </description>
     </item>
     
     <item>
       <title>New paper</title>
-      <link>http://airsea.yonsei.ac.kr/news/paper1/</link>
+      <link>https://airsea.yonsei.ac.kr/news/paper1/</link>
       <pubDate>Thu, 17 May 2018 07:49:59 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/paper1/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/paper1/</guid>
       <description>The Southern Ocean leaving the footprints on the chlorophyll Phytoplankton in the ocean contains chlorophyll in their body which absorbs CO2 and emits O2 during photosynthesis. Thus the amount of chlorophyll plays an important role in air-sea CO2 flux. The growth of phytoplankton depends on mainly two factors, light, and nutrient (iron in the Southern Ocean) which phytoplankton takes up as its food. The light provided to phytoplankton is abundant in summer, deficient in winter.</description>
     </item>
     
     <item>
       <title>Laboratory Open</title>
-      <link>http://airsea.yonsei.ac.kr/news/labopen/</link>
+      <link>https://airsea.yonsei.ac.kr/news/labopen/</link>
       <pubDate>Thu, 01 Mar 2018 07:49:59 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/labopen/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/labopen/</guid>
       <description>Air-Sea Modeling Laboratory (ASML) open Air-Sea Modeling Laboratory(ASML) is opened</description>
     </item>
     
