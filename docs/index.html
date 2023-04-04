@@ -274,31 +274,30 @@
 
 	<!-- Button container -->
 	<div id="button-container">
-		<button id="button" type="button">Change Image</button>
+		<button class="button" id="button-1" type="button">1</button>
+		<button class="button" id="button-2" type="button">2</button>
 	</div>
 
 	<!-- JavaScript code -->
 	<script>
 		// Define an array of image sources
 		var images = [
-			"/asmlab/favicon/labsymbol_bright.png",
 			"/asmlab/favicon/asmllogo.svg",
 			"/asmlab/favicon/labsymbol_bright.png"
 		];
 
 		// Get references to the image and button elements
 		var image = document.getElementById("image");
-		var button = document.getElementById("button");
+		var buttons = document.getElementsByClassName("button");
 
 		// Add a click event listener to the button
-		button.addEventListener("click", function() {
+		buttons.forEach((button, idx) => button.addEventListener("click", function() {
 			// Get a random image source from the images array
-			var randomIndex = Math.floor(Math.random() * images.length);
-			var randomImageSrc = images[randomIndex];
+			var imageSrc = images[idx];
 
 			// Set the image source to the random image
-			image.src = randomImageSrc;
-		});
+			image.src = imageSrc;
+		}));
 	</script>
 </html>
 <div class="gdoc-page__anchorwrap">
