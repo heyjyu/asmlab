@@ -292,8 +292,10 @@
 
 		// Add a click event listener to the button
 		buttons.forEach((button, idx) => button.addEventListener("click", function() {
+      console.log(idx);
+      console.log(button);
 			// Get a random image source from the images array
-			var imageSrc = images[idx];
+			var imageSrc = images[1];
 
 			// Set the image source to the random image
 			image.src = imageSrc;
