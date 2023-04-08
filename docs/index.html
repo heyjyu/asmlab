@@ -280,11 +280,13 @@
 
 	<!-- JavaScript code -->
 	<script>
+    window.googleDocCallback = function () { return true; };
+
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
     var SHEET_TITLE = 'Temperature'
     var SHEET_RANGE = 'A1:B2'
 
-    var FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+    var FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE + '&callback=googleDocCallback');
 
     fetch(FULL_URL).then(res => res.text())
       .then(rep => {
