@@ -280,6 +280,18 @@
 
 	<!-- JavaScript code -->
 	<script>
+    var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
+    var SHEET_TITLE = 'Temperature'
+    var SHEET_RANGE = 'A1:B2'
+
+    var FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+    fetch(FULL_URL).then(res => res.text())
+      .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0,-2));
+        console.log(data)
+      })
+
 		// Define an array of image sources
 		var images = [
 			"/asmlab/favicon/asmllogo.svg",
