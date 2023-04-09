@@ -291,27 +291,19 @@
     var level_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Level' + '&range=' + SHEET_RANGE);
     var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
 
-
-    fetch(temperature_url)
-      .then(res => res.text())
-      .then(rep => {
-        var data = JSON.parse(rep.substr(47).slice(0,-2));
-        console.log(data)
-      });
+    // fetch(temperature_url)
+    //   .then(res => res.text())
+    //   .then(rep => {
+    //     var data = JSON.parse(rep.substr(47).slice(0,-2));
+    //     console.log(data)
+    //   });
 
     Promise.all([
       fetch(lon_url).then(response => response.arrayBuffer()),
       fetch(lat_url).then(response => response.arrayBuffer()),
       fetch(mask_url).then(response => response.arrayBuffer()),
       fetch(temperature_url).then(response => response.arrayBuffer())
-    ]).then(([lonData, latData, levData, maskData, TData]) => {
-      // Parse binary data using a typed array
-      const lon = new Float32Array(lonData);
-      const lat = new Float32Array(latData);
-      const lev = new Float32Array(levData);
-      const mask = new Float32Array(maskData);
-      const T = new Float32Array(TData);
-
+    ]).then(([lon, lat, mask, T]) => {
       // Reshape T to match the shape of mask
       const Tmasked = [];
       // for (let k = 0; k < lev.length; k++) {
