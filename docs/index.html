@@ -269,15 +269,15 @@
     </div>
   </body>
   <!-- Image container -->
-	<div id="image-container">
+	<!-- <div id="image-container">
 		<img id="image" src="/asmlab/favicon/asmllogo.svg" alt="Default Image">
-	</div>
+	</div> -->
 
 	<!-- Button container -->
-	<div id="button-container">
+	<!-- <div id="button-container">
 		<button class="button" id="button-1" type="button">1</button>
 		<button class="button" id="button-2" type="button">2</button>
-	</div>
+	</div> -->
   <div id="plot"></div>
 
 	<!-- JavaScript code -->
@@ -351,25 +351,25 @@
     });
 
 		// Define an array of image sources
-		var images = [
-			"/asmlab/favicon/asmllogo.svg",
-			"/asmlab/favicon/labsymbol_bright.png"
-		];
+		// var images = [
+		// 	"/asmlab/favicon/asmllogo.svg",
+		// 	"/asmlab/favicon/labsymbol_bright.png"
+		// ];
 
-		// Get references to the image and button elements
-		var image = document.getElementById("image");
-		var buttons = document.getElementsByClassName("button");
+		// // Get references to the image and button elements
+		// var image = document.getElementById("image");
+		// var buttons = document.getElementsByClassName("button");
 
-		// Add a click event listener to the button
-		[...buttons].forEach((button, idx) => button.addEventListener("click", function() {
-      console.log(idx);
-      console.log(button);
-			// Get a random image source from the images array
-			var imageSrc = images[idx];
+		// // Add a click event listener to the button
+		// [...buttons].forEach((button, idx) => button.addEventListener("click", function() {
+    //   console.log(idx);
+    //   console.log(button);
+		// 	// Get a random image source from the images array
+		// 	var imageSrc = images[idx];
 
-			// Set the image source to the random image
-			image.src = imageSrc;
-		}));
+		// 	// Set the image source to the random image
+		// 	image.src = imageSrc;
+		// }));
 	</script>
 </html>
 <div class="gdoc-page__anchorwrap">
