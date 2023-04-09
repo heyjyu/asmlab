@@ -280,7 +280,89 @@
 		<button class="button" id="button-2" type="button">2</button>
 	</div> -->
   <div id="plot"></div>
+  <button id="authorize-button">Authorize</button>
+  <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+  <script type="text/javascript">
+    // Set the client ID and secret
+    const CLIENT_ID = '245742911025-ktlbuv621gpav598a3p88cu7emi74eqe.apps.googleusercontent.com';
+    const CLIENT_SECRET = '245742911025-ktlbuv621gpav598a3p88cu7emi74eqe.apps.googleusercontent.com';
 
+    // Set the API key (optional)
+    const API_KEY = 'AIzaSyCaHspaUh7Jyy9r9fupzpc8DKQvYusEeuY';
+
+    // Set the scopes for the authorization flow
+    const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
+
+    // Load the Google API client library
+    gapi.load('client:auth2', () => {
+      // Initialize the Google API client with the client ID and API key
+      gapi.client.init({
+        clientId: CLIENT_ID,
+        apiKey: API_KEY,
+        scope: SCOPES,
+      }).then(() => {
+        // Retrieve the authorization status
+        const isAuthorized = gapi.auth2.getAuthInstance().isSignedIn.get();
+        
+        // Set the authorization status on the UI
+        updateSigninStatus(isAuthorized);
+
+        // Listen for changes to the authorization status
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+        // Handle the authorization flow when the user clicks the "Authorize" button
+        const authorizeButton = document.getElementById('authorize-button');
+        authorizeButton.onclick = () => {
+          gapi.auth2.getAuthInstance().signIn();
+        };
+      });
+    });
+
+    // Update the UI based on the authorization status
+    const updateSigninStatus = (isAuthorized) => {
+      if (isAuthorized) {
+        // Get the access token
+        const authResponse = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse();
+        const accessToken = authResponse.access_token;
+
+        // Use the access token to make authorized requests to the Sheets API
+        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/image!${range}?valueRenderOption=FORMULA`
+        , {
+          headers: {
+            'Authorization': `Bearer ${accessToken}`
+          }
+        }
+        ).then(response => response.json())
+          .then(data => {
+            const formulaValue = data.values[0][0];
+            const imageUrl = formulaValue.substring(formulaValue.indexOf('"') + 1, formulaValue.lastIndexOf('"'));
+
+            console.log(`Image URL: ${imageUrl}`);
+          })
+          .catch(error => console.error('An error occurred:', error));
+      //   const xhr = new XMLHttpRequest();
+      //   xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo/values/image!A1:A1');
+      //   xhr.setRequestHeader('Authorization', `Bearer ${accessToken}`);
+      //   xhr.onload = () => {
+      //     if (xhr.status === 200) {
+      //       // Parse the response data
+      //       const responseData = JSON.parse(xhr.responseText);
+
+      //       // Print the spreadsheet data to the console
+      //       console.log(responseData.values);
+      //     } else {
+      //       console.error('Error retrieving spreadsheet data', xhr.statusText);
+      //     }
+      //   };
+      //   xhr.onerror = () => {
+      //     console.error('Error retrieving spreadsheet data');
+      //   };
+      //   xhr.send();
+      } else {
+        console.log('User is not authorized');
+      }
+    };
+  </script>
 	<!-- JavaScript code -->
 	<script>
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
@@ -312,30 +394,6 @@
     var lat_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Latitude' + '&range=' + SHEET_RANGE);
     var level_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Level' + '&range=' + SHEET_RANGE);
     var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
-
-    const authResponse = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse();
-    const accessToken = authResponse.access_token;
-    console.log(accessToken)
-
-    // Use the access token to make authorized requests to the Sheets API
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/image!A1:A1');
-    xhr.setRequestHeader('Authorization', `Bearer ${accessToken}`);
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        // Parse the response data
-        const responseData = JSON.parse(xhr.responseText);
-
-        // Print the spreadsheet data to the console
-        console.log(responseData.values);
-      } else {
-        console.error('Error retrieving spreadsheet data', xhr.statusText);
-      }
-    };
-    xhr.onerror = () => {
-      console.error('Error retrieving spreadsheet data');
-    };
-    xhr.send();
 
     Promise.all([
       fetch(lon_url).then(response => response.arrayBuffer()),
