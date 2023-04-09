@@ -285,6 +285,30 @@
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
     var SHEET_RANGE = 'E13:F23'
 
+    var sheetId = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo';
+
+    // Replace YOUR_RANGE with the range of the cell where the image is located (e.g. "A1")
+    var range = 'A1:A1';
+
+    // Replace YOUR_ACCESS_TOKEN with your access token obtained using the Google Sheets API
+    // const accessToken = 'YOUR_ACCESS_TOKEN';
+
+    // Send a request to the Google Sheets API to get the value of the cell
+    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?valueRenderOption=FORMULA`
+    // , {
+    //   headers: {
+    //     'Authorization': `Bearer ${accessToken}`
+    //   }
+    // }
+    ).then(response => response.json())
+      .then(data => {
+        const formulaValue = data.values[0][0];
+        const imageUrl = formulaValue.substring(formulaValue.indexOf('"') + 1, formulaValue.lastIndexOf('"'));
+
+        console.log(`Image URL: ${imageUrl}`);
+      })
+      .catch(error => console.error('An error occurred:', error));
+
     var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
     var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
     var lat_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Latitude' + '&range=' + SHEET_RANGE);
