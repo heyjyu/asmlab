@@ -12,6 +12,7 @@
     <title>ASML-Yonsei</title>
 
     <link rel="icon" type="image/svg+xml" href="/asmlab/favicon/asmllogo.svg" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <link
   rel="icon"
   type="image/png"
@@ -277,21 +278,77 @@
 		<button class="button" id="button-1" type="button">1</button>
 		<button class="button" id="button-2" type="button">2</button>
 	</div>
+  <div id="plot"></div>
 
 	<!-- JavaScript code -->
 	<script>
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
-    var SHEET_TITLE = 'Temperature';
     var SHEET_RANGE = 'E13:F23'
 
-    var FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+    var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
+    var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
+    var lat_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Latitude' + '&range=' + SHEET_RANGE);
+    var level_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Level' + '&range=' + SHEET_RANGE);
+    var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
+
 
     fetch(FULL_URL)
       .then(res => res.text())
       .then(rep => {
         var data = JSON.parse(rep.substr(47).slice(0,-2));
         console.log(data)
-      })
+      });
+
+      Promise.all([
+        fetch(url_lon).then(response => response.arrayBuffer()),
+        fetch(url_lat).then(response => response.arrayBuffer()),
+        fetch(url_lev).then(response => response.arrayBuffer()),
+        fetch(url_mask).then(response => response.arrayBuffer()),
+        fetch(temperature_url).then(response => response.arrayBuffer())
+      ]).then(([lonData, latData, levData, maskData, TData]) => {
+        // Parse binary data using a typed array
+        const lon = new Float32Array(lonData);
+        const lat = new Float32Array(latData);
+        const lev = new Float32Array(levData);
+        const mask = new Float32Array(maskData);
+        const T = new Float32Array(TData);
+
+        // Reshape T to match the shape of mask
+        const Tmasked = [];
+        for (let k = 0; k < lev.length; k++) {
+          const Tslice = [];
+          for (let j = 0; j < lat.length; j++) {
+            const start = k * lat.length * lon.length + j * lon.length;
+            const end = start + lon.length;
+            Tslice.push(T.subarray(start, end).map((val, i) => val * mask[start + i]));
+          }
+          Tmasked.push(Tslice);
+        }
+
+        // Create a Plotly.js heatmap trace
+        const trace = {
+          x: lon,
+          y: lat,
+          z: Tmasked[0], // Plot the first time step only
+          type: 'heatmap',
+          colorscale: 'Viridis'
+        };
+
+        // Define the layout
+        const layout = {
+          width: 600,
+          height: 400,
+          xaxis: {
+            title: 'Longitude'
+          },
+          yaxis: {
+            title: 'Latitude'
+          }
+        };
+
+        // Plot the heatmap
+        Plotly.newPlot('plot', [trace], layout);
+      });
 
 		// Define an array of image sources
 		var images = [
