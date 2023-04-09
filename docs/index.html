@@ -302,7 +302,6 @@
     Promise.all([
       fetch(lon_url).then(response => response.arrayBuffer()),
       fetch(lat_url).then(response => response.arrayBuffer()),
-      fetch(lev_url).then(response => response.arrayBuffer()),
       fetch(mask_url).then(response => response.arrayBuffer()),
       fetch(temperature_url).then(response => response.arrayBuffer())
     ]).then(([lonData, latData, levData, maskData, TData]) => {
