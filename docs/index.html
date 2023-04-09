@@ -52,6 +52,7 @@
 
 
     <script src="/asmlab/js/main-bef27ebf.bundle.min.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
 
 <link
   rel="preload"
@@ -290,24 +291,21 @@
     // Replace YOUR_RANGE with the range of the cell where the image is located (e.g. "A1")
     var range = 'A1:A1';
 
-    // Replace YOUR_ACCESS_TOKEN with your access token obtained using the Google Sheets API
-    // const accessToken = 'YOUR_ACCESS_TOKEN';
-
     // Send a request to the Google Sheets API to get the value of the cell
-    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?valueRenderOption=FORMULA`
+    // fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?valueRenderOption=FORMULA`
     // , {
     //   headers: {
     //     'Authorization': `Bearer ${accessToken}`
     //   }
     // }
-    ).then(response => response.json())
-      .then(data => {
-        const formulaValue = data.values[0][0];
-        const imageUrl = formulaValue.substring(formulaValue.indexOf('"') + 1, formulaValue.lastIndexOf('"'));
+    // ).then(response => response.json())
+    //   .then(data => {
+    //     const formulaValue = data.values[0][0];
+    //     const imageUrl = formulaValue.substring(formulaValue.indexOf('"') + 1, formulaValue.lastIndexOf('"'));
 
-        console.log(`Image URL: ${imageUrl}`);
-      })
-      .catch(error => console.error('An error occurred:', error));
+    //     console.log(`Image URL: ${imageUrl}`);
+    //   })
+    //   .catch(error => console.error('An error occurred:', error));
 
     var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
     var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
@@ -315,12 +313,29 @@
     var level_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Level' + '&range=' + SHEET_RANGE);
     var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
 
-    // fetch(temperature_url)
-    //   .then(res => res.text())
-    //   .then(rep => {
-    //     var data = JSON.parse(rep.substr(47).slice(0,-2));
-    //     console.log(data)
-    //   });
+    const authResponse = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse();
+    const accessToken = authResponse.access_token;
+    console.log(accessToken)
+
+    // Use the access token to make authorized requests to the Sheets API
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/image!A1:A1');
+    xhr.setRequestHeader('Authorization', `Bearer ${accessToken}`);
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        // Parse the response data
+        const responseData = JSON.parse(xhr.responseText);
+
+        // Print the spreadsheet data to the console
+        console.log(responseData.values);
+      } else {
+        console.error('Error retrieving spreadsheet data', xhr.statusText);
+      }
+    };
+    xhr.onerror = () => {
+      console.error('Error retrieving spreadsheet data');
+    };
+    xhr.send();
 
     Promise.all([
       fetch(lon_url).then(response => response.arrayBuffer()),
