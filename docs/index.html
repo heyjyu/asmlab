@@ -300,10 +300,10 @@
       });
 
     Promise.all([
-      fetch(url_lon).then(response => response.arrayBuffer()),
-      fetch(url_lat).then(response => response.arrayBuffer()),
-      fetch(url_lev).then(response => response.arrayBuffer()),
-      fetch(url_mask).then(response => response.arrayBuffer()),
+      fetch(lon_url).then(response => response.arrayBuffer()),
+      fetch(lat_url).then(response => response.arrayBuffer()),
+      fetch(lev_url).then(response => response.arrayBuffer()),
+      fetch(mask_url).then(response => response.arrayBuffer()),
       fetch(temperature_url).then(response => response.arrayBuffer())
     ]).then(([lonData, latData, levData, maskData, TData]) => {
       // Parse binary data using a typed array
