@@ -286,20 +286,20 @@
     var SHEET_RANGE = 'A1:ARH1024'
 
     // Replace YOUR_RANGE with the range of the cell where the image is located (e.g. "A1")
-    var range = 'A1:A1';
+    // var range = 'A1:A1';
 
-    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}?includeGridData=false&ranges=${objectId}&fields=sheets/data/embeddedObject&key=${apiKey}`)
-      .then(response => response.json())
-      .then(data => {
-        // extract the embedded object from the response
-        const embeddedObject = data.sheets[0].data[0].embeddedObject;
-        // create an iframe element
-        const iframe = document.createElement('iframe');
-        // set the src attribute to the embedded object URL
-        iframe.src = embeddedObject.url;
-        // add the iframe to the webpage
-        document.body.appendChild(iframe);
-      });
+    // fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}?includeGridData=false&ranges=${objectId}&fields=sheets/data/embeddedObject&key=${apiKey}`)
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     // extract the embedded object from the response
+    //     const embeddedObject = data.sheets[0].data[0].embeddedObject;
+    //     // create an iframe element
+    //     const iframe = document.createElement('iframe');
+    //     // set the src attribute to the embedded object URL
+    //     iframe.src = embeddedObject.url;
+    //     // add the iframe to the webpage
+    //     document.body.appendChild(iframe);
+    //   });
 
     var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
     var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
