@@ -282,6 +282,32 @@
 
 	<!-- JavaScript code -->
 	<script>
+    // Load the image file from Google Drive by file name
+    function loadImage() {
+      gapi.client.drive.files.list({
+        q: "name = 'YOUR_IMAGE_FILE_NAME'",
+        fields: "nextPageToken, files(id, name, mimeType, createdTime, modifiedTime)"
+      }).then(function(response) {
+        var files = response.result.files;
+        if (files && files.length > 0) {
+          var fileId = files[0].id;
+          gapi.client.drive.files.get({
+            'fileId': fileId,
+            'alt': 'media'
+          }).then(function(response) {
+            var imageUrl = URL.createObjectURL(response.body);
+            var img = document.createElement('img');
+            img.src = imageUrl;
+            document.body.appendChild(img);
+          });
+        } else {
+          console.log('No files found.');
+        }
+      });
+    }
+
+    loadImage();
+
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
     var SHEET_RANGE = 'A1:ARH1024'
 
