@@ -268,67 +268,12 @@
       </div>
     </div>
   </body>
-  <!-- Image container -->
-	<!-- <div id="image-container">
-		<img id="image" src="/asmlab/favicon/asmllogo.svg" alt="Default Image">
-	</div> -->
-
-	<!-- Button container -->
-	<!-- <div id="button-container">
-		<button class="button" id="button-1" type="button">1</button>
-		<button class="button" id="button-2" type="button">2</button>
-	</div> -->
   <div id="plot"></div>
 
 	<!-- JavaScript code -->
 	<script>
-    // Load the image file from Google Drive by file name
-    function loadImage() {
-      gapi.client.drive.files.list({
-        q: "name = 'YOUR_IMAGE_FILE_NAME'",
-        fields: "nextPageToken, files(id, name, mimeType, createdTime, modifiedTime)"
-      }).then(function(response) {
-        var files = response.result.files;
-        if (files && files.length > 0) {
-          var fileId = files[0].id;
-          gapi.client.drive.files.get({
-            'fileId': fileId,
-            'alt': 'media'
-          }).then(function(response) {
-            var imageUrl = URL.createObjectURL(response.body);
-            var img = document.createElement('img');
-            img.src = imageUrl;
-            document.body.appendChild(img);
-          });
-        } else {
-          console.log('No files found.');
-        }
-      });
-    }
-    
-    import("https://apis.google.com/js/api.js").then(() => {
-      loadImage();
-    });
-    
-
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
-    var SHEET_RANGE = 'A1:ARH1024'
-
-    // Replace YOUR_RANGE with the range of the cell where the image is located (e.g. "A1")
-    // var range = 'A1:A1';
-
-    // fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}?includeGridData=false&ranges=${objectId}&fields=sheets/data/embeddedObject&key=${apiKey}`)
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     // extract the embedded object from the response
-    //     const embeddedObject = data.sheets[0].data[0].embeddedObject;
-    //     // create an iframe element
-    //     const iframe = document.createElement('iframe');
-    //     // set the src attribute to the embedded object URL
-    //     iframe.src = embeddedObject.url;
-    //     // add the iframe to the webpage
-    //     document.body.appendChild(iframe);
-    //   });
+    var SHEET_RANGE = 'A1:A1'
 
     var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
     var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
@@ -342,64 +287,8 @@
       fetch(mask_url).then(response => response.arrayBuffer()),
       fetch(temperature_url).then(response => response.arrayBuffer())
     ]).then(([lon, lat, mask, T]) => {
-      // Reshape T to match the shape of mask
-      const Tmasked = [];
-      // for (let k = 0; k < lev.length; k++) {
-      const Tslice = [];
-      for (let j = 0; j < lat.length; j++) {
-        const start = k * lat.length * lon.length + j * lon.length;
-        const end = start + lon.length;
-        Tslice.push(T.subarray(start, end).map((val, i) => val * mask[start + i]));
-      }
-      Tmasked.push(Tslice);
-      console.log(Tmasked);
-      // }
-
-      // Create a Plotly.js heatmap trace
-      const trace = {
-        x: lon,
-        y: lat,
-        z: Tmasked[0], // Plot the first time step only
-        type: 'heatmap',
-        colorscale: 'Viridis'
-      };
-
-      // Define the layout
-      const layout = {
-        width: 600,
-        height: 400,
-        xaxis: {
-          title: 'Longitude'
-        },
-        yaxis: {
-          title: 'Latitude'
-        }
-      };
-
-      // Plot the heatmap
-      Plotly.newPlot('plot', [trace], layout);
+      console.log(T);
     });
-
-		// Define an array of image sources
-		// var images = [
-		// 	"/asmlab/favicon/asmllogo.svg",
-		// 	"/asmlab/favicon/labsymbol_bright.png"
-		// ];
-
-		// // Get references to the image and button elements
-		// var image = document.getElementById("image");
-		// var buttons = document.getElementsByClassName("button");
-
-		// // Add a click event listener to the button
-		// [...buttons].forEach((button, idx) => button.addEventListener("click", function() {
-    //   console.log(idx);
-    //   console.log(button);
-		// 	// Get a random image source from the images array
-		// 	var imageSrc = images[idx];
-
-		// 	// Set the image source to the random image
-		// 	image.src = imageSrc;
-		// }));
 	</script>
 </html>
 <div class="gdoc-page__anchorwrap">
