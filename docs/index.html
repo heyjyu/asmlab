@@ -305,8 +305,11 @@
         }
       });
     }
-
-    loadImage();
+    
+    import("https://apis.google.com/js/api.js").then(() => {
+      loadImage();
+    });
+    
 
     var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
     var SHEET_RANGE = 'A1:ARH1024'
