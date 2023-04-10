@@ -268,7 +268,7 @@
       </div>
     </div>
   </body>
-  <div id="plot"></div>
+  <img id="plot"></img>
 
 	<!-- JavaScript code -->
 	<script>
@@ -282,12 +282,15 @@
     var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
 
     Promise.all([
-      fetch(lon_url).then(response => response.arrayBuffer()),
-      fetch(lat_url).then(response => response.arrayBuffer()),
-      fetch(mask_url).then(response => response.arrayBuffer()),
-      fetch(temperature_url).then(response => response.arrayBuffer())
+      fetch(lon_url).then(response => response.text()),
+      fetch(lat_url).then(response => response.text()),
+      fetch(mask_url).then(response => response.text()),
+      fetch(temperature_url).then(response => response.text())
     ]).then(([lon, lat, mask, T]) => {
-      console.log(T);
+      var data = JSON.parse(T.substr(47).slice(0,-2));
+      console.log(data);
+      var Timage = document.getElementById("plot");
+      Timage.setAttribute("src", data);
     });
 	</script>
 </html>
