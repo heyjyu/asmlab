@@ -254,6 +254,7 @@
       video { width: 100%; }
       .jb-text { position: absolute; top: 50%; width: 100%; }
       .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      #plot { margin-top: 3em; }
     </style>
   </head>
   <body>
@@ -268,7 +269,9 @@
       </div>
     </div>
   </body>
-  <img id="plot" style="margin: 1em;"></img>
+  <div id="plot">
+    <img id="temperaturePlot"></img>
+  </div>
 
 	<!-- JavaScript code -->
 	<script>
@@ -290,7 +293,7 @@
       var data = JSON.parse(T.substr(47).slice(0,-2));
       console.log(data.table.rows[0].c[0].v);
       var src = data.table.rows[0].c[0].v;
-      var Timage = document.getElementById("plot");
+      var Timage = document.getElementById("temperaturePlot");
       Timage.setAttribute("src", src);
     });
 	</script>
