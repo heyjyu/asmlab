@@ -1213,12 +1213,34 @@ Air-sea CO2 exchange     While investigating the role of mesoscale eddies using 
   >
     <h1>Air-sea Interaction</h1>
     <hr>
-
-
-
-
-
-
+    <div id="plot">
+      <img id="temperaturePlot"></img>
+    </div>
+  
+    <!-- JavaScript code -->
+    <script>
+      var SHEET_ID = '1ImI6_XG4u8GLzTCExHSwyy795O4Iv1ocDeaulOubffo'
+      var SHEET_RANGE = 'A1'
+  
+      var temperature_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Temperature' + '&range=' + SHEET_RANGE);
+      var lon_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Longitude' + '&range=' + SHEET_RANGE);
+      var lat_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Latitude' + '&range=' + SHEET_RANGE);
+      var level_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Level' + '&range=' + SHEET_RANGE);
+      var mask_url = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + 'Mask' + '&range=' + SHEET_RANGE);
+  
+      Promise.all([
+        fetch(lon_url).then(response => response.text()),
+        fetch(lat_url).then(response => response.text()),
+        fetch(mask_url).then(response => response.text()),
+        fetch(temperature_url).then(response => response.text())
+      ]).then(([lon, lat, mask, T]) => {
+        var data = JSON.parse(T.substr(47).slice(0,-2));
+        console.log(data.table.rows[0].c[0].v);
+        var src = data.table.rows[0].c[0].v;
+        var Timage = document.getElementById("temperaturePlot");
+        Timage.setAttribute("src", src);
+      });
+    </script>
 
 <div class="gdoc-page__anchorwrap">
     <h3 id="air-sea-interactions">
