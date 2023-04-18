@@ -258,6 +258,65 @@
     </style>
   </head>
   <body>
+    <h1>Google Drive API Example</h1>
+    <button onclick="getFileContentByFileName('current-wind-surface-level-gfs-1.0.json')">Get File Content</button>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+      // Google API Client Library 초기화
+      function initClient() {
+        gapi.client.init({
+          apiKey: 'AIzaSyCaHspaUh7Jyy9r9fupzpc8DKQvYusEeuY',
+          clientId: '245742911025-ktlbuv621gpav598a3p88cu7emi74eqe.apps.googleusercontent.com',
+          discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
+          scope: 'https://www.googleapis.com/auth/drive.readonly'
+        }).then(function() {
+          console.log('Google API client initialized');
+        }, function(error) {
+          console.error('Error initializing Google API client:', error);
+        });
+      }
+  
+      // API 클라이언트 라이브러리 로드
+      gapi.load('client', initClient);
+  
+      // 파일 이름을 기반으로 파일 데이터 가져오기
+      function getFileContentByFileName(fileName) {
+        // 파일 이름을 기반으로 파일 ID 가져오기
+        gapi.client.drive.files.list({
+          q: "name='" + fileName + "'",
+          fields: "nextPageToken, files(id, name, mimeType)"
+        }).then(function(response) {
+          var files = response.result.files;
+          if (files && files.length > 0) {
+            var fileId = files[0].id;
+            // 파일 다운로드 링크 가져오기
+            gapi.client.drive.files.get({
+              fileId: fileId,
+              fields: "webContentLink"
+            }).then(function(response) {
+              var downloadUrl = response.result.webContentLink;
+              // 파일 데이터 가져오기
+              fetch(downloadUrl, {
+                headers: new Headers({
+                  "Authorization": "Bearer " + gapi.auth.getToken().access_token
+                })
+              }).then(function(response) {
+                return response.text();
+              }).then(function(text) {
+                // 파일 데이터 출력하기
+                var pre = document.createElement('pre');
+                pre.innerText = text;
+                document.body.appendChild(pre);
+              });
+            });
+          } else {
+            console.log("File not found.");
+          }
+        });
+      }
+    </script>
+  </body>
+  <body>
     <div class="jb-box">
       <video muted autoplay loop playsinline>
         <source src="images/Ocean.mp4" type="video/mp4">
