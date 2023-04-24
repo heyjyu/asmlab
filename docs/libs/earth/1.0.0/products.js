@@ -555,8 +555,6 @@ var products = function() {
     function dataSource(header) {
         // noinspection FallthroughInSwitchStatementJS
         switch (header.center || header.centerName) {
-            case -3:
-                return "OSCAR / Earth & Space Research";
             case 7:
             case "US National Weather Service, National Centres for Environmental Prediction (NCEP)":
                 return "GFS / NCEP / US National Weather Service";
