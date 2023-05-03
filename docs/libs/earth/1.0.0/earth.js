@@ -578,8 +578,8 @@
                     particle.age = MAX_PARTICLE_AGE;  // particle has escaped the grid, never to return...
                 }
                 else {
-                    var xt = x + v[0];
-                    var yt = y + v[1];
+                    var xt = x + v[0] * 0.05;
+                    var yt = y + v[1] * 0.05;
                     if (field.isDefined(xt, yt)) {
                         // Path from (x,y) to (xt,yt) is visible, so add this particle to the appropriate draw bucket.
                         particle.xt = xt;
