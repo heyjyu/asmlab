@@ -129,7 +129,8 @@ var products = function() {
                             header: file[0].header,
                             interpolate: bilinearInterpolateVector,
                             data: function(i) {
-                                return [uData[i], vData[i]];
+                                var u = uData[i], v = vData[i];
+                                return µ.isValue(u) && µ.isValue(v) ? [u, v] : null;
                             }
                         }
                     },
