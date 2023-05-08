@@ -118,7 +118,7 @@ var products = function() {
                     field: "vector",
                     type: "wind",
                     description: localize({
-                        name: {en: "Wind", ja: "風速"},
+                        name: {en: "Currents", ja: ""},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
                     paths: [gfs1p0degPath(attr, "currents", attr.surface, attr.level)],
