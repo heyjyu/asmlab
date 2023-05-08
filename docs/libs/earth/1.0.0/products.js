@@ -121,7 +121,7 @@ var products = function() {
                         name: {en: "Wind", ja: "風速"},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
-                    paths: [gfs1p0degPath(attr, "wind", attr.surface, attr.level)],
+                    paths: [gfs1p0degPath(attr, "currents", attr.surface, attr.level)],
                     date: gfsDate(attr),
                     builder: function(file) {
                         var uData = file[0].data, vData = file[1].data;
