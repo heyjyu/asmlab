@@ -44,7 +44,7 @@ var products = function() {
     function gfs1p0degPath(attr, type, surface, level) {
         var dir = attr.date, stamp = dir === "current" ? "current" : attr.hour;
         var model = "ESEA";
-        var file = [model, type, level].filter(µ.isValue).join("-") + ".json";
+        var file = [model, type, level].filter(µ.isValue).join("_") + ".json";
         return [WEATHER_PATH, dir, file].join("/");
     }
 
