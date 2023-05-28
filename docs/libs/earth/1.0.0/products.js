@@ -43,10 +43,9 @@ var products = function() {
      */
     function gfs1p0degPath(attr, type, surface, level) {
         var dir = attr.date, stamp = dir === "current" ? "current" : attr.hour;
-        var file = [stamp, type, surface, level, "gfs", "1.0"].filter(µ.isValue).join("-") + ".json";
-        // return [WEATHER_PATH, dir, file].join("/");
-
-        return "https://earth-spring.fly.dev/" + type;
+        var model = "ESEA";
+        var file = [model, type, level].filter(µ.isValue).join("-") + ".json";
+        return [WEATHER_PATH, dir, file].join("/");
     }
 
     function gfsDate(attr) {
@@ -121,7 +120,7 @@ var products = function() {
                         name: {en: "Currents", ja: ""},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
-                    paths: [gfs1p0degPath(attr, "currents", attr.surface, attr.level)],
+                    paths: [gfs1p0degPath(attr, "Currents", attr.surface, attr.level)],
                     date: gfsDate(attr),
                     builder: function(file) {
                         var uData = file[0].data, vData = file[1].data;
@@ -164,7 +163,7 @@ var products = function() {
                         name: {en: "Temp", ja: "気温"},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
-                    paths: [gfs1p0degPath(attr, "ocean-temp", attr.surface, attr.level)],
+                    paths: [gfs1p0degPath(attr, "T", attr.surface, attr.level)],
                     date: gfsDate(attr),
                     builder: function(file) {
                         var record = file[0], data = record.data;
