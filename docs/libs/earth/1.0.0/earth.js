@@ -1032,7 +1032,7 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "surface", level: "0m", overlayType: "default"});
+                configuration.save({param: "wind", surface: "surface", level: "level", overlayType: "default"});
             }
         });
         configuration.on("change:param", function(x, param) {
