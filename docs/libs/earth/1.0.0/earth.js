@@ -1043,7 +1043,7 @@
                 // When switching between modes, there may be no associated data for the current date. So we need
                 // find the closest available according to the catalog. This is not necessary if date is "current".
                 // UNDONE: this code is annoying. should be easier to get date for closest ocean product.
-                var ocean = {param: "ocean", surface: "surface", level: "currents", overlayType: "default"};
+                var ocean = {param: "ocean", surface: "surface", level: "level", overlayType: "default"};
                 var attr = _.clone(configuration.attributes);
                 if (attr.date === "current") {
                     configuration.save(ocean);
@@ -1088,7 +1088,7 @@
         // Add handlers for all wind level buttons.
         d3.selectAll(".surface").each(function() {
             var id = this.id, parts = id.split("-");
-            bindButtonToConfiguration("#" + id, {param: "wind", surface: parts[0], level: parts[1]});
+            bindButtonToConfiguration("#" + id, {param: "ocean", surface: parts[0], level: parts[1]});
         });
 
         // Add handlers for ocean animation types.
