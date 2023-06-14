@@ -11,7 +11,7 @@ var µ = function() {
 
     var τ = 2 * Math.PI;
     var H = 0.0000360;  // 0.0000360°φ ~= 4m
-    var DEFAULT_CONFIG = "current/ocean/surface/currents/orthographic";
+    var DEFAULT_CONFIG = "current/ocean/surface/level/orthographic";
     var TOPOLOGY = isMobile() ? "/asmlab/data/earth-topo-mobile.json?v2" : "/asmlab/data/earth-topo.json?v2";
 
     /**
