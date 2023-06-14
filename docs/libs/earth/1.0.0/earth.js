@@ -1091,6 +1091,11 @@
             bindButtonToConfiguration("#" + id, {param: "ocean", surface: parts[0], level: parts[1]});
         });
 
+        d3.selectAll(".model").each(function() {
+            var id = this.id, parts = id.split("-");
+            bindButtonToConfiguration("#" + id, {model: parts[1]});
+        });
+
         // Add handlers for ocean animation types.
         bindButtonToConfiguration("#animate-currents", {param: "ocean", surface: "surface", level: "currents"});
 

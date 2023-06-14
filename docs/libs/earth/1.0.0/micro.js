@@ -11,7 +11,7 @@ var µ = function() {
 
     var τ = 2 * Math.PI;
     var H = 0.0000360;  // 0.0000360°φ ~= 4m
-    var DEFAULT_CONFIG = "current/ocean/surface/level/orthographic";
+    var DEFAULT_CONFIG = "current/ocean/surface/level/ESEA/orthographic";
     var TOPOLOGY = isMobile() ? "/asmlab/data/earth-topo-mobile.json?v2" : "/asmlab/data/earth-topo.json?v2";
 
     /**
@@ -511,16 +511,17 @@ var µ = function() {
      * @param overlayTypes the set of allowed overlays.
      * @returns {Object} the result of the parse.
      */
-    function parse(hash, projectionNames, overlayTypes) {
+     function parse(hash, projectionNames, overlayTypes) {
+        console.log(hash);
         var option, result = {};
-        //             1        2        3          4          5            6      7      8    9
-        var tokens = /^(current|(\d{4})\/(\d{1,2})\/(\d{1,2})\/(\d{3,4})Z)\/(\w+)\/(\w+)\/(\w+)([\/].+)?/.exec(hash);
+        //             1        2        3          4          5            6      7      8    9      10
+        var tokens = /^(current|(\d{4})\/(\d{1,2})\/(\d{1,2})\/(\d{3,4})Z)\/(\w+)\/(\w+)\/(\w+)\/(\w+)([\/].+)?/.exec(hash);
         if (tokens) {
             var date = tokens[1] === "current" ?
                 "current" :
                 tokens[2] + "/" + zeroPad(tokens[3], 2) + "/" + zeroPad(tokens[4], 2);
             var hour = isValue(tokens[5]) ? zeroPad(tokens[5], 4) : "";
-
+            var model = tokens[9] === "orthographic" ? "ESEA" : tokens[9];
             result = {
                 date: date,                  // "current" or "yyyy/mm/dd"
                 hour: hour,                  // "hhhh" or ""
@@ -531,7 +532,8 @@ var µ = function() {
                 orientation: "",
                 topology: TOPOLOGY,
                 overlayType: "default",
-                showGridPoints: false
+                showGridPoints: false,
+                model: tokens[9]
             };
             coalesce(tokens[10], "").split("/").forEach(function(segment) {
                 if ((option = /^(\w+)(=([\d\-.,]*))?$/.exec(segment))) {
@@ -574,7 +576,7 @@ var µ = function() {
             var proj = [attr.projection, attr.orientation].filter(isTruthy).join("=");
             var ol = !isValue(attr.overlayType) || attr.overlayType === "default" ? "" : "overlay=" + attr.overlayType;
             var grid = attr.showGridPoints ? "grid=on" : "";
-            return [dir, attr.param, attr.surface, attr.level, ol, proj, grid].filter(isTruthy).join("/");
+            return [dir, attr.param, attr.surface, attr.level, attr.model, ol, proj, grid].filter(isTruthy).join("/");
         },
 
         /**
