@@ -110,8 +110,8 @@ var products = function() {
 
     var FACTORIES = {
 
-        "wind": {
-            matches: _.matches({param: "wind"}),
+        "currents": {
+            matches: _.matches({param: "ocean"}),
             create: function(attr) {
                 return buildProduct({
                     field: "vector",
@@ -154,7 +154,7 @@ var products = function() {
         },
 
         "temp": {
-            matches: _.matches({param: "wind", overlayType: "temp"}),
+            matches: _.matches({param: "ocean", overlayType: "temp"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -194,7 +194,7 @@ var products = function() {
         },
 
         "relative_humidity": {
-            matches: _.matches({param: "wind", overlayType: "relative_humidity"}),
+            matches: _.matches({param: "ocean", overlayType: "relative_humidity"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -231,7 +231,7 @@ var products = function() {
         },
 
         "air_density": {
-            matches: _.matches({param: "wind", overlayType: "air_density"}),
+            matches: _.matches({param: "ocean", overlayType: "air_density"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -267,7 +267,7 @@ var products = function() {
         },
 
         "wind_power_density": {
-            matches: _.matches({param: "wind", overlayType: "wind_power_density"}),
+            matches: _.matches({param: "ocean", overlayType: "wind_power_density"}),
             create: function(attr) {
                 var windProduct = FACTORIES.wind.create(attr);
                 var airdensProduct = FACTORIES.air_density.create(attr);
@@ -320,7 +320,7 @@ var products = function() {
         },
 
         "total_cloud_water": {
-            matches: _.matches({param: "wind", overlayType: "total_cloud_water"}),
+            matches: _.matches({param: "ocean", overlayType: "total_cloud_water"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -357,7 +357,7 @@ var products = function() {
         },
 
         "total_precipitable_water": {
-            matches: _.matches({param: "wind", overlayType: "total_precipitable_water"}),
+            matches: _.matches({param: "ocean", overlayType: "total_precipitable_water"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -399,7 +399,7 @@ var products = function() {
         },
 
         "mean_sea_level_pressure": {
-            matches: _.matches({param: "wind", overlayType: "mean_sea_level_pressure"}),
+            matches: _.matches({param: "ocean", overlayType: "mean_sea_level_pressure"}),
             create: function(attr) {
                 return buildProduct({
                     field: "scalar",
@@ -442,53 +442,53 @@ var products = function() {
             }
         },
 
-        "currents": {
-            matches: _.matches({param: "ocean", surface: "surface", level: "currents"}),
-            create: function(attr) {
-                return when(catalogs.oscar).then(function(catalog) {
-                    return buildProduct({
-                        field: "vector",
-                        type: "currents",
-                        description: localize({
-                            name: {en: "Ocean Currents", ja: "海流"},
-                            qualifier: {en: " @ Surface", ja: " @ 地上"}
-                        }),
-                        paths: [oscar0p33Path(catalog, attr)],
-                        date: oscarDate(catalog, attr),
-                        navigate: function(step) {
-                            return oscarStep(catalog, this.date, step);
-                        },
-                        builder: function(file) {
-                            var uData = file[0].data, vData = file[1].data;
-                            return {
-                                header: file[0].header,
-                                interpolate: bilinearInterpolateVector,
-                                data: function(i) {
-                                    var u = uData[i], v = vData[i];
-                                    return µ.isValue(u) && µ.isValue(v) ? [u, v] : null;
-                                }
-                            }
-                        },
-                        units: [
-                            {label: "m/s",  conversion: function(x) { return x; },            precision: 2},
-                            {label: "km/h", conversion: function(x) { return x * 3.6; },      precision: 1},
-                            {label: "kn",   conversion: function(x) { return x * 1.943844; }, precision: 1},
-                            {label: "mph",  conversion: function(x) { return x * 2.236936; }, precision: 1}
-                        ],
-                        scale: {
-                            bounds: [0, 1.5],
-                            gradient: µ.segmentedColorScale([
-                                [0, [255, 253, 233]],
-                                [0.3, [196, 184, 85]],
-                                [0.9, [56, 114, 49]],
-                                [1.5, [27, 35, 21]]
-                            ])
-                        },
-                        particles: {velocityScale: 1/4400, maxIntensity: 0.7}
-                    });
-                });
-            }
-        },
+        // "currents": {
+        //     matches: _.matches({param: "ocean", surface: "surface", level: "currents"}),
+        //     create: function(attr) {
+        //         return when(catalogs.oscar).then(function(catalog) {
+        //             return buildProduct({
+        //                 field: "vector",
+        //                 type: "currents",
+        //                 description: localize({
+        //                     name: {en: "Ocean Currents", ja: "海流"},
+        //                     qualifier: {en: " @ Surface", ja: " @ 地上"}
+        //                 }),
+        //                 paths: [oscar0p33Path(catalog, attr)],
+        //                 date: oscarDate(catalog, attr),
+        //                 navigate: function(step) {
+        //                     return oscarStep(catalog, this.date, step);
+        //                 },
+        //                 builder: function(file) {
+        //                     var uData = file[0].data, vData = file[1].data;
+        //                     return {
+        //                         header: file[0].header,
+        //                         interpolate: bilinearInterpolateVector,
+        //                         data: function(i) {
+        //                             var u = uData[i], v = vData[i];
+        //                             return µ.isValue(u) && µ.isValue(v) ? [u, v] : null;
+        //                         }
+        //                     }
+        //                 },
+        //                 units: [
+        //                     {label: "m/s",  conversion: function(x) { return x; },            precision: 2},
+        //                     {label: "km/h", conversion: function(x) { return x * 3.6; },      precision: 1},
+        //                     {label: "kn",   conversion: function(x) { return x * 1.943844; }, precision: 1},
+        //                     {label: "mph",  conversion: function(x) { return x * 2.236936; }, precision: 1}
+        //                 ],
+        //                 scale: {
+        //                     bounds: [0, 1.5],
+        //                     gradient: µ.segmentedColorScale([
+        //                         [0, [255, 253, 233]],
+        //                         [0.3, [196, 184, 85]],
+        //                         [0.9, [56, 114, 49]],
+        //                         [1.5, [27, 35, 21]]
+        //                     ])
+        //                 },
+        //                 particles: {velocityScale: 1/4400, maxIntensity: 0.7}
+        //             });
+        //         });
+        //     }
+        // },
 
         "off": {
             matches: _.matches({overlayType: "off"}),
