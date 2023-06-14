@@ -11,7 +11,7 @@ var µ = function() {
 
     var τ = 2 * Math.PI;
     var H = 0.0000360;  // 0.0000360°φ ~= 4m
-    var DEFAULT_CONFIG = "current/wind/surface/level/orthographic";
+    var DEFAULT_CONFIG = "current/ocean/surface/level/orthographic";
     var TOPOLOGY = isMobile() ? "/asmlab/data/earth-topo-mobile.json?v2" : "/asmlab/data/earth-topo.json?v2";
 
     /**
@@ -520,6 +520,7 @@ var µ = function() {
                 "current" :
                 tokens[2] + "/" + zeroPad(tokens[3], 2) + "/" + zeroPad(tokens[4], 2);
             var hour = isValue(tokens[5]) ? zeroPad(tokens[5], 4) : "";
+
             result = {
                 date: date,                  // "current" or "yyyy/mm/dd"
                 hour: hour,                  // "hhhh" or ""
@@ -532,7 +533,7 @@ var µ = function() {
                 overlayType: "default",
                 showGridPoints: false
             };
-            coalesce(tokens[9], "").split("/").forEach(function(segment) {
+            coalesce(tokens[10], "").split("/").forEach(function(segment) {
                 if ((option = /^(\w+)(=([\d\-.,]*))?$/.exec(segment))) {
                     if (projectionNames.has(option[1])) {
                         result.projection = option[1];                 // non-empty alphanumeric _
