@@ -1032,7 +1032,7 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS"});
+                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default"});
             }
         });
         configuration.on("change:param", function(x, param) {
@@ -1043,7 +1043,7 @@
                 // When switching between modes, there may be no associated data for the current date. So we need
                 // find the closest available according to the catalog. This is not necessary if date is "current".
                 // UNDONE: this code is annoying. should be easier to get date for closest ocean product.
-                var ocean = {param: "ocean", surface: "surface", level: "level", overlayType: "default"};
+                var ocean = {param: "ocean", surface: "surface", level: "level", overlayType: "default", model: "ESEA"};
                 var attr = _.clone(configuration.attributes);
                 if (attr.date === "current") {
                     configuration.save(ocean);
@@ -1088,7 +1088,7 @@
         // Add handlers for all ocean level buttons.
         d3.selectAll(".surface").each(function() {
             var id = this.id, parts = id.split("-");
-            bindButtonToConfiguration("#" + id, {param: "oceanr", surface: parts[0], level: parts[1]});
+            bindButtonToConfiguration("#" + id, {param: "ocean", surface: parts[0], level: parts[1]});
         });
 
         d3.selectAll(".surface-wind").each(function() {

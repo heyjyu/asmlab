@@ -222,12 +222,12 @@ var products = function() {
                         {label: "mph",  conversion: function(x) { return x * 2.236936; }, precision: 1}
                     ],
                     scale: {
-                        bounds: [0, 100],
+                        bounds: [0, 30],
                         gradient: µ.segmentedColorScale([
                             [0, [255, 253, 233]],
-                            [30, [196, 184, 85]],
-                            [60, [56, 114, 49]],
-                            [100, [27, 35, 21]]
+                            [10, [196, 184, 85]],
+                            [20, [56, 114, 49]],
+                            [30, [27, 35, 21]]
                         ])
                     },
                     particles: {velocityScale: 1/4400, maxIntensity: 0.7}
