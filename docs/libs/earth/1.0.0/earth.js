@@ -1032,7 +1032,7 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "surface", level: "level", overlayType: "default"});
+                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default"});
             }
         });
         configuration.on("change:param", function(x, param) {
@@ -1085,10 +1085,15 @@
             d3.select("#option-show-grid").classed("highlighted", showGridPoints);
         });
 
-        // Add handlers for all wind level buttons.
+        // Add handlers for all ocean level buttons.
         d3.selectAll(".surface").each(function() {
             var id = this.id, parts = id.split("-");
-            bindButtonToConfiguration("#" + id, {param: "ocean", surface: parts[0], level: parts[1]});
+            bindButtonToConfiguration("#" + id, {param: "oceanr", surface: parts[0], level: parts[1]});
+        });
+
+        d3.selectAll(".surface-wind").each(function() {
+            var id = this.id, parts = id.split("-");
+            bindButtonToConfiguration("#" + id, {param: "wind", surface: parts[0], level: parts[1]});
         });
 
         d3.selectAll(".model").each(function() {

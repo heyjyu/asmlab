@@ -115,7 +115,7 @@ var products = function() {
             create: function(attr) {
                 return buildProduct({
                     field: "vector",
-                    type: "wind",
+                    type: "currents",
                     description: localize({
                         name: {en: "Currents", ja: ""},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
@@ -189,6 +189,48 @@ var products = function() {
                             [35, [235, 248, 116]]
                         ])
                     }
+                });
+            }
+        },
+
+        "wind": {
+            matches: _.matches({param: "wind"}),
+            create: function(attr) {
+                return buildProduct({
+                    field: "vector",
+                    type: "wind",
+                    description: localize({
+                        name: {en: "Wind", ja: "風速"},
+                        qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
+                    }),
+                    paths: [gfs1p0degPath(attr, "Wind", attr.surface, attr.level)],
+                    date: gfsDate(attr),
+                    builder: function(file) {
+                        var uData = file[0].data, vData = file[1].data;
+                        return {
+                            header: file[0].header,
+                            interpolate: bilinearInterpolateVector,
+                            data: function(i) {
+                                return [uData[i], vData[i]];
+                            }
+                        }
+                    },
+                    units: [
+                        {label: "m/s",  conversion: function(x) { return x; },            precision: 2},
+                        {label: "km/h", conversion: function(x) { return x * 3.6; },      precision: 1},
+                        {label: "kn",   conversion: function(x) { return x * 1.943844; }, precision: 1},
+                        {label: "mph",  conversion: function(x) { return x * 2.236936; }, precision: 1}
+                    ],
+                    scale: {
+                        bounds: [0, 1.5],
+                        gradient: µ.segmentedColorScale([
+                            [0, [255, 253, 233]],
+                            [0.3, [196, 184, 85]],
+                            [0.9, [56, 114, 49]],
+                            [1.5, [27, 35, 21]]
+                        ])
+                    },
+                    particles: {velocityScale: 1/4400, maxIntensity: 0.7}
                 });
             }
         },
