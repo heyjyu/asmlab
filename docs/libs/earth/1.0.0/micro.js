@@ -512,7 +512,6 @@ var µ = function() {
      * @returns {Object} the result of the parse.
      */
      function parse(hash, projectionNames, overlayTypes) {
-        console.log(hash);
         var option, result = {};
         //             1        2        3          4          5            6      7      8    9      10
         var tokens = /^(current|(\d{4})\/(\d{1,2})\/(\d{1,2})\/(\d{3,4})Z)\/(\w+)\/(\w+)\/(\w+)\/(\w+)([\/].+)?/.exec(hash);
