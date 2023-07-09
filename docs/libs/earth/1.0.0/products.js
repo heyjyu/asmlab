@@ -235,6 +235,47 @@ var products = function() {
             }
         },
 
+
+        "windtemp": {
+            matches: _.matches({param: "wind", overlayType: "windtemp"}),
+            create: function(attr) {
+                return buildProduct({
+                    field: "scalar",
+                    type: "windtemp",
+                    description: localize({
+                        name: {en: "Temp", ja: "気温"},
+                        qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
+                    }),
+                    paths: [gfs1p0degPath(attr, "WT", attr.surface, attr.level)],
+                    date: gfsDate(attr),
+                    builder: function(file) {
+                        var record = file[0], data = record.data;
+                        return {
+                            header: record.header,
+                            interpolate: bilinearInterpolateScalar,
+                            data: function(i) {
+                                return data[i];
+                            }
+                        }
+                    },
+                    units: [
+                        {label: "°C", conversion: function(x) { return x; },       precision: 1},
+                        {label: "°F", conversion: function(x) { return x * 9/5 - 186.52; }, precision: 1},
+                        {label: "K",  conversion: function(x) { return x + 273.15; },                precision: 1}
+                    ],
+                    scale: {
+                        bounds: [5, 35],
+                        gradient: µ.segmentedColorScale([
+                            [5, [13, 34, 51]],
+                            [15, [61, 51, 153]],
+                            [25, [221, 127, 94]],
+                            [35, [235, 248, 116]]
+                        ])
+                    }
+                });
+            }
+        },
+
         "relative_humidity": {
             matches: _.matches({param: "ocean", overlayType: "relative_humidity"}),
             create: function(attr) {
