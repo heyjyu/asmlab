@@ -498,7 +498,9 @@
                             var scalar = null;
                             if (wind) {
                                 wind = distort(projection, λ, φ, x, y, velocityScale, wind);
-                                scalar = wind[2];
+                                if (wind[2]!==0) {
+                                    scalar = wind[2];
+                                }
                             }
                             if (hasDistinctOverlay) {
                                 scalar = overlayInterpolate(λ, φ);
