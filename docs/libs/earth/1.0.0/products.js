@@ -264,12 +264,12 @@ var products = function() {
                         {label: "K",  conversion: function(x) { return x + 273.15; },                precision: 1}
                     ],
                     scale: {
-                        bounds: [-50, 35],
+                        bounds: [-80, 55],
                         gradient: µ.segmentedColorScale([
-                            [-50, [13, 34, 51]],
-                            [-22, [61, 51, 153]],
-                            [7, [221, 127, 94]],
-                            [35, [235, 248, 116]]
+                            [-80, [13, 34, 51]],
+                            [-35, [61, 51, 153]],
+                            [10, [221, 127, 94]],
+                            [55, [235, 248, 116]]
                         ])
                     }
                 });
