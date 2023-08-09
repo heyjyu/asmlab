@@ -5,22 +5,31 @@
     <link>http://airsea.yonsei.ac.kr/tags/</link>
     <description>Recent content in Tags on ASML-Yonsei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 May 2023 23:03:07 +0900</lastBuildDate><atom:link href="http://airsea.yonsei.ac.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 23:03:07 +0900</lastBuildDate><atom:link href="http://airsea.yonsei.ac.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ocean</title>
-      <link>http://airsea.yonsei.ac.kr/tags/ocean/</link>
-      <pubDate>Wed, 10 May 2023 23:03:07 +0900</pubDate>
+      <title>aogs</title>
+      <link>http://airsea.yonsei.ac.kr/tags/aogs/</link>
+      <pubDate>Tue, 08 Aug 2023 23:03:07 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/tags/ocean/</guid>
+      <guid>http://airsea.yonsei.ac.kr/tags/aogs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>seminar</title>
       <link>http://airsea.yonsei.ac.kr/tags/seminar/</link>
-      <pubDate>Wed, 10 May 2023 23:03:07 +0900</pubDate>
+      <pubDate>Tue, 08 Aug 2023 23:03:07 +0900</pubDate>
       
       <guid>http://airsea.yonsei.ac.kr/tags/seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ocean</title>
+      <link>http://airsea.yonsei.ac.kr/tags/ocean/</link>
+      <pubDate>Wed, 10 May 2023 23:03:07 +0900</pubDate>
+      
+      <guid>http://airsea.yonsei.ac.kr/tags/ocean/</guid>
       <description></description>
     </item>
     
