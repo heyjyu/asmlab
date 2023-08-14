@@ -258,11 +258,11 @@ var products = function() {
                         {label: "psu", conversion: function(x) { return x; },       precision: 1},
                     ],
                     scale: {
-                        bounds: [0, 35],
+                        bounds: [20, 35],
                         gradient: µ.segmentedColorScale([
-                            [0, [40, 25, 106]],
-                            [12.5, [44, 92, 139]],
-                            [25, [108, 177, 128]],
+                            [20, [40, 25, 106]],
+                            [25, [44, 92, 139]],
+                            [30, [108, 177, 128]],
                             [35, [248, 236, 160]]
                         ])
                     }
