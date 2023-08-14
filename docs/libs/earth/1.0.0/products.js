@@ -193,6 +193,81 @@ var products = function() {
             }
         },
 
+        "SSH": {
+            matches: _.matches({param: "ocean", overlayType: "SSH"}),
+            create: function(attr) {
+                return buildProduct({
+                    field: "scalar",
+                    type: "SSH",
+                    description: localize({
+                        name: {en: "SSH"},
+                        qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
+                    }),
+                    paths: [gfs1p0degPath(attr, "SSH", attr.surface, "0m")],
+                    date: gfsDate(attr),
+                    builder: function(file) {
+                        var record = file[0], data = record.data;
+                        return {
+                            header: record.header,
+                            interpolate: bilinearInterpolateScalar,
+                            data: function(i) {
+                                return data[i];
+                            }
+                        }
+                    },
+                    units: [
+                        {label: "m", conversion: function(x) { return x; },       precision: 1},
+                    ],
+                    scale: {
+                        bounds: [-20, 20],
+                        gradient: µ.segmentedColorScale([
+                            [-20, [26, 29, 66]],
+                            [0, [236, 232, 233]],
+                            [20, [56, 14, 20]]
+                        ])
+                    }
+                });
+            }
+        },
+        
+        "salt": {
+            matches: _.matches({param: "ocean", overlayType: "salt"}),
+            create: function(attr) {
+                return buildProduct({
+                    field: "scalar",
+                    type: "salt",
+                    description: localize({
+                        name: {en: "Salt"},
+                        qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
+                    }),
+                    paths: [gfs1p0degPath(attr, "S", attr.surface, attr.level)],
+                    date: gfsDate(attr),
+                    builder: function(file) {
+                        var record = file[0], data = record.data;
+                        return {
+                            header: record.header,
+                            interpolate: bilinearInterpolateScalar,
+                            data: function(i) {
+                                return data[i];
+                            }
+                        }
+                    },
+                    units: [
+                        {label: "psu", conversion: function(x) { return x; },       precision: 1},
+                    ],
+                    scale: {
+                        bounds: [0, 35],
+                        gradient: µ.segmentedColorScale([
+                            [0, [40, 25, 106]],
+                            [12.5, [44, 92, 139]],
+                            [25, [108, 177, 128]],
+                            [35, [248, 236, 160]]
+                        ])
+                    }
+                });
+            }
+        },
+
         "wind": {
             matches: _.matches({param: "wind"}),
             create: function(attr) {
