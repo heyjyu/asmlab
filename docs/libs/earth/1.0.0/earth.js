@@ -1068,7 +1068,7 @@
         configuration.on("change:overlayType", function(x, ot) {
             d3.select("#depth").classed("invisible", false);
             if (ot === "SSH") {
-                d3.select("depth").classed("invisible", true);
+                d3.select("#depth").classed("invisible", true);
             }
             d3.select("#surface-level").classed("disabled", ot === "air_density" || ot === "wind_power_density");
         });
