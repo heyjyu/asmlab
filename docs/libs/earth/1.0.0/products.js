@@ -200,7 +200,7 @@ var products = function() {
                     field: "scalar",
                     type: "SSH",
                     description: localize({
-                        name: {en: "SSH"},
+                        name: {en: "SSH", ja: ""},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
                     paths: [gfs1p0degPath(attr, "SSH", attr.surface, "0m")],
@@ -222,14 +222,16 @@ var products = function() {
                         bounds: [-20, 20],
                         gradient: µ.segmentedColorScale([
                             [-20, [26, 29, 66]],
+                            [-10, [84, 138, 181]],
                             [0, [236, 232, 233]],
+                            [10, [178, 90, 63]],
                             [20, [56, 14, 20]]
                         ])
                     }
                 });
             }
         },
-        
+
         "salt": {
             matches: _.matches({param: "ocean", overlayType: "salt"}),
             create: function(attr) {
@@ -237,7 +239,7 @@ var products = function() {
                     field: "scalar",
                     type: "salt",
                     description: localize({
-                        name: {en: "Salt"},
+                        name: {en: "Salt", ja: ""},
                         qualifier: {en: " @ " + describeSurface(attr), ja: " @ " + describeSurfaceJa(attr)}
                     }),
                     paths: [gfs1p0degPath(attr, "S", attr.surface, attr.level)],
