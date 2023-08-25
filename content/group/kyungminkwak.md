@@ -20,7 +20,7 @@ weight: 3
 ---
 
 #### Education
-+ **M.S.** (2021) Atmospheric Sciences, Yonsei Univ. , Seoul, Korea
++ **M.S.** (2021) Department of Atmospheric Sciences, Yonsei University, Seoul, Korea
 + **B.S.** (2019) Atmospheric and Environmental Sciences, Gangneung-Wonju National Univ. , Gangneung, Korea
 
 

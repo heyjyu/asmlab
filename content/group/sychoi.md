@@ -23,3 +23,4 @@ weight: 5
 + Climate variabilities and Teleconnections
 
 #### Education
++ **B.S.** (2023) Department of Atmospheric Sciences, Yonsei University, Seoul, Korea

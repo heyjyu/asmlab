@@ -23,6 +23,7 @@ weight: 4
 + Sea Surface Temperature tendency and variability
 
 #### Education
++ **M.S.** (2023) Department of Atmospheric Sciences, Yonsei University, Seoul, Korea
 + **B.S.** (2022) Department of Atmospheric Sciences, Yonsei University, Seoul, Korea
 
 #### Awards
