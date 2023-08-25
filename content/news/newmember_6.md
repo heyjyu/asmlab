@@ -24,6 +24,6 @@ There has been an addition of new members to ASML in 2021.
 <img src="/images/group/chlee.jpeg" class="img-responsive; width:50%;" alt="">
 </div>
 
-**[Chaehyung Lee](/group/chaehyeonglee/#anchor)** joined ASML as an undergraduate-master program student.
+**[Chaehyeong Lee](/group/chaehyeonglee/#anchor)** joined ASML as an undergraduate-master program student.
 We welcome you!
 <br>

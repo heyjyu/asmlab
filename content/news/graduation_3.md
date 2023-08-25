@@ -11,7 +11,7 @@ draft: false
 type: "post"
 ---
 
-**[Chaehyung](/group/chaehyeonglee/#anchor)** received his  Master's degree and graduated this summer! Also **[SeungYeon](/group/sychoi/#anchor)** received her Bachelor's degree and graduated this summer!
+**[Chaehyeong](/group/chaehyeonglee/#anchor)** received his  Master's degree and graduated this summer! Also **[SeungYeon](/group/sychoi/#anchor)** received her Bachelor's degree and graduated this summer!
 
 Big congratulations! We are very proud of you.
 
