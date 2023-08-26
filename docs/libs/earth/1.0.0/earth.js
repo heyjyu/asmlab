@@ -682,6 +682,37 @@
                 g.fillRect(i, 0, 1, c.height);
             }
 
+            const leftX = 10;
+            const midX = c.width / 2 - 15;
+            const rightX = c.width - 40;
+            const y = c.height / 2 + 5;
+
+            g.font = "16px Arial";
+
+            var borderWidth = 0.5;
+            g.fillStyle = "rgba(255,255,255,0.6)"; // Border color
+            g.fillText(bounds[0].toString(), leftX - borderWidth, y - borderWidth - 0.5);
+            g.fillText(bounds[0].toString(), leftX + borderWidth, y - borderWidth - 0.5);
+            g.fillText(bounds[0].toString(), leftX - borderWidth, y + borderWidth);
+            g.fillText(bounds[0].toString(), leftX + borderWidth, y + borderWidth);
+
+            g.fillText((bounds[0]/2 + bounds[1]/2).toString(), midX - borderWidth, y - borderWidth - 0.5);
+            g.fillText((bounds[0]/2 + bounds[1]/2).toString(), midX + borderWidth, y - borderWidth - 0.5);
+            g.fillText((bounds[0]/2 + bounds[1]/2).toString(), midX - borderWidth, y + borderWidth);
+            g.fillText((bounds[0]/2 + bounds[1]/2).toString(), midX + borderWidth, y + borderWidth);
+
+            g.fillText(bounds[1].toString(), rightX - borderWidth, y - borderWidth - 0.5);
+            g.fillText(bounds[1].toString(), rightX + borderWidth, y - borderWidth - 0.5);
+            g.fillText(bounds[1].toString(), rightX - borderWidth, y + borderWidth);
+            g.fillText(bounds[1].toString(), rightX + borderWidth, y + borderWidth);
+
+            g.fillStyle = "rgb(10,10,10)";
+            g.fillText(bounds[0].toString(), leftX, y);
+            g.fillText((bounds[0]/2 + bounds[1]/2).toString(), midX, y);
+            g.fillText(bounds[1].toString(), rightX, y);
+
+            g.fill();
+
             // Show tooltip on hover.
             colorBar.on("mousemove", function() {
                 var x = d3.mouse(this)[0];
