@@ -513,28 +513,28 @@ var µ = function() {
      */
      function parse(hash, projectionNames, overlayTypes) {
         var option, result = {};
-        //             1        2        3          4          5            6      7      8    9      10
-        var tokens = /^(current|(\d{4})\/(\d{1,2})\/(\d{1,2})\/(\d{3,4})Z)\/(\w+)\/(\w+)\/(\w+)\/(\w+)([\/].+)?/.exec(hash);
+        //             1        2     3        4          5          6            7      8      9    10      11
+        var tokens = /^(current|(\d+)|(\d{4})\/(\d{1,2})\/(\d{1,2})\/(\d{3,4})Z)\/(\w+)\/(\w+)\/(\w+)\/(\w+)([\/].+)?/.exec(hash);
         if (tokens) {
-            var date = tokens[1] === "current" ?
+            var date = tokens[2] === undefined ?
                 "current" :
-                tokens[2] + "/" + zeroPad(tokens[3], 2) + "/" + zeroPad(tokens[4], 2);
-            var hour = isValue(tokens[5]) ? zeroPad(tokens[5], 4) : "";
-            var model = tokens[9] === "orthographic" ? "ESEA" : tokens[9];
+                tokens[2];
+            var hour = isValue(tokens[6]) ? zeroPad(tokens[6], 4) : "";
+            var model = tokens[10] === "orthographic" ? "ESEA" : tokens[10];
             result = {
                 date: date,                  // "current" or "yyyy/mm/dd"
                 hour: hour,                  // "hhhh" or ""
-                param: tokens[6],            // non-empty alphanumeric _
-                surface: tokens[7],          // non-empty alphanumeric _
-                level: tokens[8],            // non-empty alphanumeric _
+                param: tokens[7],            // non-empty alphanumeric _
+                surface: tokens[8],          // non-empty alphanumeric _
+                level: tokens[9],            // non-empty alphanumeric _
                 projection: "orthographic",
                 orientation: "",
                 topology: TOPOLOGY,
                 overlayType: "default",
                 showGridPoints: false,
-                model: tokens[9]
+                model: tokens[10]
             };
-            coalesce(tokens[10], "").split("/").forEach(function(segment) {
+            coalesce(tokens[11], "").split("/").forEach(function(segment) {
                 if ((option = /^(\w+)(=([\d\-.,]*))?$/.exec(segment))) {
                     if (projectionNames.has(option[1])) {
                         result.projection = option[1];                 // non-empty alphanumeric _
