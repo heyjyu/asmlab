@@ -973,6 +973,11 @@
             if (_.intersection(changed, ["date", "hour", "param", "surface", "level", "model"]).length > 0) {
                 rebuildRequired = true;
             }
+
+            if (_.intersection(changed, ["model"]).length > 0) {
+                configuration.save({date: "current"})
+            }
+
             // Build a new grid if the new overlay type is different from the current one.
             var overlayType = configuration.get("overlayType") || "default";
             if (_.indexOf(changed, "overlayType") >= 0 && overlayType !== "off") {
