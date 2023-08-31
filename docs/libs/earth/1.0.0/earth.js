@@ -266,12 +266,15 @@
     /**
      * Modifies the configuration to navigate to the chronologically next or previous data layer.
      */
-    function navigate(step) {
+     function navigate(step) {
         if (downloadsInProgress > 0) {
             log.debug("Download in progress--ignoring nav request.");
             return;
         }
-        var next = gridAgent.value().primaryGrid.navigate(step);
+        var next = new Date(validityDate(gridAgent.value()));
+        
+        next.setDate(next.getDate() + step);
+
         if (next) {
             configuration.save(µ.dateToConfig(next));
         }
@@ -1048,10 +1051,10 @@
             d3.selectAll(".wind-mode").classed("invisible", mode !== "wind");
             switch (mode) {
                 case "wind":
-                    d3.select("#nav-backward-more").attr("title", "-1 Day");
-                    d3.select("#nav-backward").attr("title", "-3 Hours");
-                    d3.select("#nav-forward").attr("title", "+3 Hours");
-                    d3.select("#nav-forward-more").attr("title", "+1 Day");
+                    d3.select("#nav-backward-more").attr("title", "-10 Days");
+                    d3.select("#nav-backward").attr("title", "-1 Day");
+                    d3.select("#nav-forward").attr("title", "+1 Day");
+                    d3.select("#nav-forward-more").attr("title", "+10 Days");
                     break;
                 case "ocean":
                     d3.select("#nav-backward-more").attr("title", "-1 Month");
@@ -1065,7 +1068,8 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS"});
+                configuration.save({param: "wind", surface: "surface", level: "level", overlayType: "default", date: "current"});
+                stopCurrentAnimation(true);  // cleanup particle artifacts over continents
             }
         });
         configuration.on("change:param", function(x, param) {
