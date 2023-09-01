@@ -1054,20 +1054,11 @@
         configuration.on("change:param", function(context, mode) {
             d3.selectAll(".ocean-mode").classed("invisible", mode !== "ocean");
             d3.selectAll(".wind-mode").classed("invisible", mode !== "wind");
-            switch (mode) {
-                case "wind":
-                    d3.select("#nav-backward-more").attr("title", "-10 Days");
-                    d3.select("#nav-backward").attr("title", "-1 Day");
-                    d3.select("#nav-forward").attr("title", "+1 Day");
-                    d3.select("#nav-forward-more").attr("title", "+10 Days");
-                    break;
-                case "ocean":
-                    d3.select("#nav-backward-more").attr("title", "-1 Month");
-                    d3.select("#nav-backward").attr("title", "-5 Days");
-                    d3.select("#nav-forward").attr("title", "+5 Days");
-                    d3.select("#nav-forward-more").attr("title", "+1 Month");
-                    break;
-            }
+
+            d3.select("#nav-backward-more").attr("title", "-10 Days");
+            d3.select("#nav-backward").attr("title", "-1 Day");
+            d3.select("#nav-forward").attr("title", "+1 Day");
+            d3.select("#nav-forward-more").attr("title", "+10 Days");
         });
 
         // Add handlers for mode buttons.
@@ -1155,6 +1146,7 @@
             bindButtonToConfiguration("#overlay-" + type, {overlayType: type});
         });
         bindButtonToConfiguration("#overlay-wind", {param: "wind", overlayType: "default"});
+        bindButtonToConfiguration("#overlay-windtemp", {param: "wind", overlayType: "windtemp"});
         bindButtonToConfiguration("#overlay-ocean-off", {overlayType: "off"});
         bindButtonToConfiguration("#overlay-currents", {overlayType: "default"});
 
