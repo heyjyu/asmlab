@@ -341,12 +341,12 @@ var products = function() {
                         {label: "K",  conversion: function(x) { return x + 273.15; },                precision: 1}
                     ],
                     scale: {
-                        bounds: [-80, 55],
+                        bounds: [-80, 35],
                         gradient: µ.segmentedColorScale([
                             [-80, [13, 34, 51]],
-                            [-35, [61, 51, 153]],
-                            [10, [221, 127, 94]],
-                            [55, [235, 248, 116]]
+                            [-40, [61, 51, 153]],
+                            [-5, [221, 127, 94]],
+                            [35, [235, 248, 116]]
                         ])
                     }
                 });
