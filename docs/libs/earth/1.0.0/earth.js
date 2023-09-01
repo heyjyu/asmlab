@@ -1058,7 +1058,9 @@
 
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
-            configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
+            if (configuration.get("param") !== "wind") {
+                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
+                stopCurrentAnimation(true);  // cleanup particle artifacts over continents
         });
 
         configuration.on("change:param", function(x, param) {
@@ -1091,7 +1093,7 @@
         // Add logic to disable buttons that are incompatible with each other.
         configuration.on("change:overlayType", function(x, ot) {
             d3.select("#depth").classed("invisible", false);
-            if (ot === "SSH") {
+            if (ot === "SSH" || ot === "wind" || ot === "windtemp") { // all wind variables need to be added
                 d3.select("#depth").classed("invisible", true);
             }
             d3.select("#surface-level").classed("disabled", ot === "air_density" || ot === "wind_power_density");
