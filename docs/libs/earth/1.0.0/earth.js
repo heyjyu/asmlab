@@ -1146,7 +1146,7 @@
         products.overlayTypes.forEach(function(type) {
             bindButtonToConfiguration("#overlay-" + type, {overlayType: type});
         });
-        bindButtonToConfiguration("#overlay-wind", {param: "wind", overlayType: "default"});
+        bindButtonToConfiguration("#overlay-wind", {param: "wind", overlayType: "wind"});
         bindButtonToConfiguration("#overlay-windtemp", {param: "wind", overlayType: "windtemp"});
         bindButtonToConfiguration("#overlay-ocean-off", {overlayType: "off"});
         bindButtonToConfiguration("#overlay-currents", {overlayType: "default"});
