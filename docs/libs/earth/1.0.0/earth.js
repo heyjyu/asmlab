@@ -1059,7 +1059,7 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "wind", model: "SKRIPS", date: "current"});
+                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
                 stopCurrentAnimation(true);  // cleanup particle artifacts over continents
             }
         });
@@ -1093,8 +1093,10 @@
 
         // Add logic to disable buttons that are incompatible with each other.
         configuration.on("change:overlayType", function(x, ot) {
-            d3.select("#depth").classed("invisible", false);
-            if (ot === "SSH" || ot === "wind" || ot === "windtemp") { // all wind variables need to be added
+            if (x.attributes.param === "wind") {
+                d3.select("#depth").classed("invisible", false);
+            }
+            if (ot === "SSH") { 
                 d3.select("#depth").classed("invisible", true);
             }
             d3.select("#surface-level").classed("disabled", ot === "air_density" || ot === "wind_power_density");
@@ -1146,7 +1148,7 @@
         products.overlayTypes.forEach(function(type) {
             bindButtonToConfiguration("#overlay-" + type, {overlayType: type});
         });
-        bindButtonToConfiguration("#overlay-wind", {param: "wind", overlayType: "wind"});
+        bindButtonToConfiguration("#overlay-wind", {param: "wind", overlayType: "default"});
         bindButtonToConfiguration("#overlay-windtemp", {param: "wind", overlayType: "windtemp"});
         bindButtonToConfiguration("#overlay-ocean-off", {overlayType: "off"});
         bindButtonToConfiguration("#overlay-currents", {overlayType: "default"});

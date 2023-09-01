@@ -271,7 +271,7 @@ var products = function() {
         },
 
         "wind": {
-            matches: _.matches({param: "wind", overlayType: "wind"}),
+            matches: _.matches({param: "wind"}),
             create: function(attr) {
                 return buildProduct({
                     field: "vector",
