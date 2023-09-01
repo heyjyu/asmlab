@@ -1052,7 +1052,9 @@
 
         // Modify menu depending on what mode we're in.
         configuration.on("change:param", function(context, mode) {
+            console.log(mode);
             d3.selectAll(".ocean-mode").classed("invisible", mode !== "ocean");
+            d3.select("#depth").classed("invisible", mode !== "ocean");
             d3.selectAll(".wind-mode").classed("invisible", mode !== "wind");
 
             d3.select("#nav-backward-more").attr("title", "-10 Days");
