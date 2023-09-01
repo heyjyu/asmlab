@@ -1052,24 +1052,15 @@
 
         // Modify menu depending on what mode we're in.
         configuration.on("change:param", function(context, mode) {
-            console.log(mode);
             d3.selectAll(".ocean-mode").classed("invisible", mode !== "ocean");
-            d3.select("#depth").classed("invisible", mode !== "ocean");
             d3.selectAll(".wind-mode").classed("invisible", mode !== "wind");
-
-            d3.select("#nav-backward-more").attr("title", "-10 Days");
-            d3.select("#nav-backward").attr("title", "-1 Day");
-            d3.select("#nav-forward").attr("title", "+1 Day");
-            d3.select("#nav-forward-more").attr("title", "+10 Days");
         });
 
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
-            if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
-                stopCurrentAnimation(true);  // cleanup particle artifacts over continents
-            }
+            configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
         });
+
         configuration.on("change:param", function(x, param) {
             d3.select("#wind-mode-enable").classed("highlighted", param === "wind");
         });
@@ -1109,6 +1100,11 @@
             d3.select("#overlay-air_density").classed("disabled", s === "surface");
             d3.select("#overlay-wind_power_density").classed("disabled", s === "surface");
         });
+
+        d3.select("#nav-backward-more").attr("title", "-10 Days");
+        d3.select("#nav-backward").attr("title", "-1 Day");
+        d3.select("#nav-forward").attr("title", "+1 Day");
+        d3.select("#nav-forward-more").attr("title", "+10 Days");
 
         // Add event handlers for the time navigation buttons.
         d3.select("#nav-backward-more").on("click", navigate.bind(null, -10));
