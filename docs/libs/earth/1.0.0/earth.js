@@ -1059,7 +1059,7 @@
         // Add handlers for mode buttons.
         d3.select("#wind-mode-enable").on("click", function() {
             if (configuration.get("param") !== "wind") {
-                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "default", model: "SKRIPS", date: "current"});
+                configuration.save({param: "wind", surface: "isobaric", level: "1000hPa", overlayType: "wind", model: "SKRIPS", date: "current"});
                 stopCurrentAnimation(true);  // cleanup particle artifacts over continents
             }
         });
