@@ -1093,7 +1093,7 @@
 
         // Add logic to disable buttons that are incompatible with each other.
         configuration.on("change:overlayType", function(x, ot) {
-            if (x.attributes.param === "wind") {
+            if (x.attributes.param === "ocean") {
                 d3.select("#depth").classed("invisible", false);
             }
             if (ot === "SSH") { 
