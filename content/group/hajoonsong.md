@@ -2,7 +2,7 @@
 title: "Hajoon Song"
 nickname: "hajoonsong"
 date: "2018-04-08T13:39:46+02:00"
-image: "images/group/HajoonSong.png"
+image: "images/group/songhajoon.png"
 bg_image: "images/fromiss2.jpg"
 category: "Principal Investigator"
 information:
