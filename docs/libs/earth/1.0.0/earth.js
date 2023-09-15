@@ -1106,6 +1106,7 @@
             d3.select("#overlay-wind_power_density").classed("disabled", s === "surface");
         });
 
+<<<<<<< HEAD
         d3.select("#nav-backward-more").attr("title", "-30 Days");
         d3.select("#nav-backward").attr("title", "-10 Day");
         d3.select("#nav-forward").attr("title", "+10 Day");
@@ -1116,6 +1117,18 @@
         d3.select("#nav-forward-more" ).on("click", navigate.bind(null, +30));
         d3.select("#nav-backward"     ).on("click", navigate.bind(null, -10));
         d3.select("#nav-forward"      ).on("click", navigate.bind(null, +10));
+=======
+        d3.select("#nav-backward-more").attr("title", "-10 Days");
+        d3.select("#nav-backward").attr("title", "-1 Day");
+        d3.select("#nav-forward").attr("title", "+1 Day");
+        d3.select("#nav-forward-more").attr("title", "+10 Days");
+
+        // Add event handlers for the time navigation buttons.
+        d3.select("#nav-backward-more").on("click", navigate.bind(null, -10));
+        d3.select("#nav-forward-more" ).on("click", navigate.bind(null, +10));
+        d3.select("#nav-backward"     ).on("click", navigate.bind(null, -1));
+        d3.select("#nav-forward"      ).on("click", navigate.bind(null, +1));
+>>>>>>> parent of 363eb29 (Change every day to every other 4 days)
         d3.select("#nav-now").on("click", function() { configuration.save({date: "current", hour: ""}); });
 
         d3.select("#option-show-grid").on("click", function() {
