@@ -219,13 +219,13 @@ var products = function() {
                         {label: "m", conversion: function(x) { return x; },       precision: 1},
                     ],
                     scale: {
-                        bounds: [-20, 20],
+                        bounds: [-2, 2],
                         gradient: µ.segmentedColorScale([
-                            [-20, [26, 29, 66]],
-                            [-10, [84, 138, 181]],
+                            [-2, [26, 29, 66]],
+                            [-1, [84, 138, 181]],
                             [0, [236, 232, 233]],
-                            [10, [178, 90, 63]],
-                            [20, [56, 14, 20]]
+                            [1, [178, 90, 63]],
+                            [2, [56, 14, 20]]
                         ])
                     }
                 });
