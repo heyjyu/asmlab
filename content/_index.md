@@ -15,15 +15,16 @@ geekdocHidden: true
     <title>CSS</title>
     <style>
       body { padding: 0px; margin: 0px; }
-      .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
+      .jb-box { width: 100%; max-height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
       video { width: 100%; }
       .jb-text { position: absolute; top: 50%; width: 100%; }
-      .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      .jb-text p { margin-top: -24px; text-align: center; font-size: min(8vw, 4em); color: #ffffff; }
+      #banner { font-size: min(6vw, 3.5em); display: block; background: center / cover no-repeat url("/images/banner.png"); width: 100%; height: 4em; color: white; margin-top: 0.5em; padding-top: 1.5em;}
     </style>
   </head>
   <body>
     <div class="jb-box">
-      <video muted autoplay loop>
+      <video muted autoplay loop playsinline>
         <source src="images/Ocean.mp4" type="video/mp4">
         <strong>Your browser does not support the video tag.</strong>
       </video>
@@ -32,6 +33,9 @@ geekdocHidden: true
         <p>Yonsei Univ.</p>
       </div>
     </div>
+    <a id="banner" href="/model" target="_blank">
+      <span style="background: rgba(0,0,0,0.5);">Check out our model result</span>
+    </a>
   </body>
 </html>
 

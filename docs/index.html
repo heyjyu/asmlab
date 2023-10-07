@@ -5,7 +5,7 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.109.0">
+<meta name="generator" content="Hugo 0.119.0">
 
 
 
@@ -30,7 +30,7 @@
     
   <meta property="og:site_name" content="ASML-Yonsei" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://airsea.yonsei.ac.kr/" />
+<meta property="og:url" content="https://airsea.yonsei.ac.kr/" />
 
 
 
@@ -44,7 +44,7 @@
       "@context": "http://schema.org",
       "@type": "WebSite",
       "name": "ASML-Yonsei",
-      "url": "http://airsea.yonsei.ac.kr/",
+      "url": "https://airsea.yonsei.ac.kr/",
       "inLanguage": "en"
   }
   </script>
@@ -110,7 +110,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="http://airsea.yonsei.ac.kr/" rel="canonical" type="text/html" />
+  <link href="https://airsea.yonsei.ac.kr/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -149,7 +149,7 @@
   <div class="container flex align-center justify-between">
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="http://airsea.yonsei.ac.kr/">
+      <a class="gdoc-brand gdoc-header__link" href="https://airsea.yonsei.ac.kr/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -249,15 +249,16 @@
     <title>CSS</title>
     <style>
       body { padding: 0px; margin: 0px; }
-      .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
+      .jb-box { width: 100%; max-height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
       video { width: 100%; }
       .jb-text { position: absolute; top: 50%; width: 100%; }
-      .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      .jb-text p { margin-top: -24px; text-align: center; font-size: min(8vw, 4em); color: #ffffff; }
+      #banner { font-size: min(6vw, 3.5em); display: block; background: center / cover no-repeat url("./banner.png"); width: 100%; height: 4em; color: white; margin-top: 0.5em; padding-top: 1.5em;}
     </style>
   </head>
   <body>
     <div class="jb-box">
-      <video muted autoplay loop>
+      <video muted autoplay loop playsinline>
         <source src="images/Ocean.mp4" type="video/mp4">
         <strong>Your browser does not support the video tag.</strong>
       </video>
@@ -266,6 +267,9 @@
         <p>Yonsei Univ.</p>
       </div>
     </div>
+    <a id="banner" href="/model" target="_blank">
+      <span style="background: rgba(0,0,0,0.5);">Check out our model result</span>
+    </a>
   </body>
 </html>
 <div class="gdoc-page__anchorwrap">
