@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://airsea.yonsei.ac.kr/group/hajoonsong/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/hajoonsong/</loc>
     <lastmod>2023-09-07T12:34:21+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/research/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2022-05-28T21:17:27+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/kyungminnoh/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/kyungminnoh/</loc>
     <lastmod>2023-09-05T17:41:23+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/jungheeyun/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/jungheeyun/</loc>
     <lastmod>2023-09-05T17:41:23+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/yeonjuchoi/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/yeonjuchoi/</loc>
     <lastmod>2022-04-11T13:33:12+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/yignnoh/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/yignnoh/</loc>
     <lastmod>2023-09-05T17:41:23+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/</loc>
     <lastmod>2022-09-17T23:26:28+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/group/ajincho/</loc>
     <lastmod>2022-09-19T16:00:58+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/kyungminkwak/</loc>
-    <lastmod>2023-08-25T11:22:35+09:00</lastmod>
+    <loc>https://airsea.yonsei.ac.kr/group/kyungminkwak/</loc>
+    <lastmod>2023-09-07T12:59:40+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/publication/</loc>
     <lastmod>2022-10-28T13:55:58+09:00</lastmod>
@@ -35,7 +35,7 @@
     <loc>https://airsea.yonsei.ac.kr/group/hyungjoonmin/</loc>
     <lastmod>2023-02-23T18:18:59+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/chaehyeonglee/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/chaehyeonglee/</loc>
     <lastmod>2023-08-25T11:22:35+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/group/dhkim/</loc>
@@ -53,142 +53,184 @@
     <loc>https://airsea.yonsei.ac.kr/group/yujinkim/</loc>
     <lastmod>2023-02-23T17:22:06+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/group/sychoi/</loc>
+    <loc>https://airsea.yonsei.ac.kr/group/sychoi/</loc>
     <lastmod>2023-08-25T11:22:35+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/events/</loc>
+    <loc>https://airsea.yonsei.ac.kr/events/</loc>
     <lastmod>2023-04-04T00:31:09+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/news/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/Graduation/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/Graduation/</loc>
     <lastmod>2023-08-25T13:27:21+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/graduation_3/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/graduation_3/</loc>
     <lastmod>2023-08-25T13:27:21+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/member/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/member/</loc>
     <lastmod>2023-08-25T13:27:21+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/</loc>
     <lastmod>2023-08-25T13:27:21+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/workshop/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/workshop/</loc>
     <lastmod>2023-08-22T16:01:42+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/ewha_workshop/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/ewha_workshop/</loc>
     <lastmod>2023-08-22T16:01:42+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/%EC%9D%B4%ED%99%94%EC%97%AC%EB%8C%80/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/%EC%9D%B4%ED%99%94%EC%97%AC%EB%8C%80/</loc>
     <lastmod>2023-08-22T16:01:42+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/aogs_2023/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/aogs_2023/</loc>
     <lastmod>2023-08-10T12:32:55+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/AOGS/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/AOGS/</loc>
     <lastmod>2023-08-10T12:32:55+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/seminar/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/seminar/</loc>
     <lastmod>2023-08-10T12:32:55+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/ocean_seminar/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/ocean_seminar/</loc>
     <lastmod>2023-05-23T14:21:45+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/ocean/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/ocean/</loc>
     <lastmod>2023-05-23T14:21:45+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/events/KJ2023/</loc>
+    <loc>https://airsea.yonsei.ac.kr/events/KJ2023/</loc>
     <lastmod>2023-04-04T14:57:14+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/event/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/event/</loc>
     <lastmod>2023-05-23T14:21:45+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/event_flower/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/event_flower/</loc>
     <lastmod>2023-05-23T14:21:45+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/news/graduation_2/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2023-02-23T18:15:15+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/ewha_2023/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/ewha_2023/</loc>
     <lastmod>2023-02-23T18:40:01+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/event/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/event/</loc>
     <lastmod>2023-02-23T17:22:06+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/graduation_1/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/graduation_1/</loc>
     <lastmod>2023-02-23T17:22:06+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/graduation/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/graduation/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/newmember_6/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/newmember_6/</loc>
     <lastmod>2023-08-25T13:27:21+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/newmember_5/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/newmember_5/</loc>
     <lastmod>2023-02-17T17:01:26+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/lab/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/lab/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/renovation/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/renovation/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/renovation/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/renovation/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/Webpage_update/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/Webpage_update/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/webpage_update/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/webpage_update/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/hiring/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/hiring/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/postdoc/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/postdoc/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/hiring_postdoc/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/hiring_postdoc/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/SIO/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/SIO/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/sio/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/sio/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/hiring/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/hiring/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/master/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/master/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/PhD/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/PhD/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/MIT/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/MIT/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/MITvisit_2019/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/MITvisit_2019/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/travel/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/travel/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/IUGG/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/IUGG/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/tags/Canada/</loc>
+    <loc>https://airsea.yonsei.ac.kr/tags/Canada/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/newmember_4/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/newmember_4/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/farewell_suji/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/farewell_suji/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
-    <loc>http://airsea.yonsei.ac.kr/news/hanyang/</loc>
+    <loc>https://airsea.yonsei.ac.kr/news/hanyang/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/%ED%95%9C%EC%96%91%EB%8C%80/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/SEES/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/%EC%84%9C%EC%9A%B8%EB%8C%80/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/kms_climate/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/EGU/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/meeting/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/EGU/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/%EA%B8%B0%EC%83%81%ED%95%99%ED%9A%8C/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/MITvisit_feb/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/newmember_3/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/farewell_1/</loc>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/ewha/</loc>
+    <lastmod>2023-02-23T17:22:06+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/news/ewha_2018/</loc>
+    <lastmod>2023-02-23T18:15:15+09:00</lastmod>
+  </url><url>
+    <loc>https://airsea.yonsei.ac.kr/tags/KIAPS/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/news/kiaps/</loc>
@@ -225,7 +267,7 @@
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/news/newmember_2/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/news/MITvisit/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
@@ -246,10 +288,10 @@
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/tags/air-sea-interaction/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2022-04-10T01:18:02+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/research/airseacouple/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2022-04-10T01:18:02+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/tags/data-assimilation/</loc>
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
@@ -270,9 +312,9 @@
     <lastmod>2022-04-09T23:32:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/</loc>
-    <lastmod>2023-10-06T00:23:35+09:00</lastmod>
+    <lastmod>2023-10-07T10:00:04+09:00</lastmod>
   </url><url>
     <loc>https://airsea.yonsei.ac.kr/model/</loc>
-    <lastmod>2023-10-06T09:04:54+09:00</lastmod>
+    <lastmod>2023-03-29T14:05:45+09:00</lastmod>
   </url>
 </urlset>

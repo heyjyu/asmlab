@@ -117,8 +117,8 @@ h1 {
 
 #details {
     position: absolute;
-    bottom: 3%;
-    left: 2%;
+    bottom: 7%;
+    left: 5%;
     pointer-events: none;  /* This div is just a container--do not let it interfere with operation of the map. */
 }
 
@@ -188,6 +188,9 @@ h1 {
 
 .wrapper {
     background: transparent;
+    height: 100vh;
+    color: white;
+    margin-top: calc(env(safe-area-inset-top) + 1px);
 }
 
 .container {

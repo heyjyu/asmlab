@@ -19,7 +19,7 @@ geekdocHidden: true
       <meta property="og:title"       content="earth"/>
       <meta property="og:description" content="Model result of ASML"/>
       <meta property="og:url"         content="https://airsea.yonsei.ac.kr/model/"/>
-      <meta property="og:image"       content="https://airsea.yonsei.ac.kr/banner.png"/>
+      <meta property="og:image"       content="https://airsea.yonsei.ac.kr/images/banner.png"/>
       <link rel="shortcut icon" href="/favicon/asmllogo.svg"/>
       <link rel="apple-touch-icon" sizes="120x120" href="/favicon/asmllogo.svg"/>
       <link rel="apple-touch-icon" sizes="152x152" href="/favicon/asmllogo.svg"/>

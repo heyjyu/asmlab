@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ocean on ASML-Yonsei</title>
-    <link>http://airsea.yonsei.ac.kr/tags/ocean/</link>
+    <link>https://airsea.yonsei.ac.kr/tags/ocean/</link>
     <description>Recent content in ocean on ASML-Yonsei</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 May 2023 23:03:07 +0900</lastBuildDate><atom:link href="http://airsea.yonsei.ac.kr/tags/ocean/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 10 May 2023 23:03:07 +0900</lastBuildDate><atom:link href="https://airsea.yonsei.ac.kr/tags/ocean/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 한국해양학회 춘계학술대회 참석 </title>
-      <link>http://airsea.yonsei.ac.kr/news/ocean_seminar/</link>
+      <link>https://airsea.yonsei.ac.kr/news/ocean_seminar/</link>
       <pubDate>Wed, 10 May 2023 23:03:07 +0900</pubDate>
       
-      <guid>http://airsea.yonsei.ac.kr/news/ocean_seminar/</guid>
+      <guid>https://airsea.yonsei.ac.kr/news/ocean_seminar/</guid>
       <description>2023.05.03(수)~05.04(목)에 부산 벡스코에서 한국해양학회 춘계학술대회가 열렸습니다. 저희 연구팀에서는 김동혁, 한경훈, 이준우, 민형준 연구원이 참석하였습니다. 한경훈 연구원은 &amp;lsquo;지역해양순환모델을 이용한 동아시아 미래 해양 환경 변화 및 동해 역전순환 변화 분석&amp;rsquo; 이라는 제목으로 구두 발표를 진행하였습니다.
 같이 진행된 포스터 세션에서는 연구 공유, 질의 응답 등 다양한 방식으로 발표가 이루어졌습니다. 이번 해양학회 참석을 통해 동해와 관련된 최근 모델링 연구 동향을 파악하고 해양 물리 관련 세션 발표를 들으며 대기-해양 상호작용 관련 연구들에 대한 아이디어를 획득하는 등 다양한 경험을 할 수 있었습니다.</description>
     </item>
