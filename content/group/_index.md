@@ -1,5 +1,5 @@
 ---
-title: "People in ASML"
+title: "People in ASMLAB"
 description: ""
 draft: false
 weight: 2
